@@ -1,0 +1,19 @@
+Feature:Add new Business Process
+
+  @Web
+
+  Scenario Outline:
+
+  This test scenario ensures that SMP user is able to add business process
+
+    Given I am SMP user and I navigate to SMP <TB> url
+    And Signin using <username> and <password> credentials
+    And click on SMP Administration link
+    And click on Business Processes
+    And enter <BPID> <Description> and click on Add
+
+
+    Examples:
+
+      |TB                                                            |username |password |BPID|Description|
+      |http://sntb2-ppsmpw-41:8080/smp_jsecure/jsp/login.jsp         |Admin    |SW50ZXJhY3Q= |111 |Test       |

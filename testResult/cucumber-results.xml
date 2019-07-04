@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="182.147538">
+<testcase classname="Add new offer text" name="_2" time="182.147538">
+<failure message="java.lang.AssertionError: Failed to add offer text&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:94)&#13;&#10;&#9;at steps.SMP_Scenarios.check_offer_notID_added(SMP_Scenarios.java:1001)&#13;&#10;&#9;at ✽.And check if BIGDATABUNDLE10v2 and Subscribe With Chg are added in the table(Features/Pay and Go SMP/Add new offer text.feature:13)&#13;&#10;"><![CDATA[Given I am SMP user and I navigate to SMP http://sntb1-ppsmpw-13:8080/smp_jsecure/jsp/login.jsp url.passed
+And Signin using Admin and SW50ZXJhY3Q= credentials.........................passed
+And click on SMP Administration link........................................passed
+And click on Service Providers link and select 283..........................passed
+And click on Notifications link.............................................passed
+And click on Offers tab and Create new link.................................passed
+And fill details BIGDATABUNDLE10v2 and Subscribe With Chg and For testing...passed
+And check if BIGDATABUNDLE10v2 and Subscribe With Chg are added in the table.failed
+
+StackTrace:
+java.lang.AssertionError: Failed to add offer text
+	at org.testng.Assert.fail(Assert.java:94)
+	at steps.SMP_Scenarios.check_offer_notID_added(SMP_Scenarios.java:1001)
+	at ✽.And check if BIGDATABUNDLE10v2 and Subscribe With Chg are added in the table(Features/Pay and Go SMP/Add new offer text.feature:13)
+]]></failure>
+</testcase>
+</testsuite>

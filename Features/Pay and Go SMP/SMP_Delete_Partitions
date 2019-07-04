@@ -1,0 +1,18 @@
+Feature:Delete SMP partition
+
+  @Web
+
+  Scenario Outline:
+
+  This test scenario ensures that SMP user is able to delete a partition
+
+    Given I am SMP user and I navigate to SMP <TB> url
+    And Signin using <username> and <password> credentials
+    And click on SMP Administration link
+    And click on Partitions
+    And click Delete against partition <name> and Delete
+
+    Examples:
+
+      |TB                                                            |username |password |name |
+      |http://sntb2-ppsmpw-41:8080/smp_jsecure/jsp/login.jsp         |Admin    |SW50ZXJhY3Q=|MMS 10|

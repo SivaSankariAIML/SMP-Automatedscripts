@@ -1,0 +1,194 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+.comment {font-family:courier;font-weight:normal;font-size:small;color:black;border:1px dashed black;background-color:silver}
+.tip {font-family:courier;font-weight:normal;font-size:small;color:white;background-color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: auto;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+</style>
+<title>Detailed Results Report</title>
+<meta charset="UTF-8" />
+</head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+<h1>Overview</h1>
+
+
+<table>
+	<tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>Total</th><th>%Passed</th></tr>
+	<tr><th>Features</th>
+		<td class="passed" id="features_passed">0</td>
+		<td class="failed" id="features_failed">1</td>
+		<td class="known" id="features_known">0</td>
+		<td class="undefined" id="features_undefined">0</td>
+		<td id="features_total">1</td>
+		<td id="features_rate">
+				0%
+		</td>
+	</tr>
+	<tr><th>Scenarios</th>
+		<td class="passed" id="scenarios_passed">0</td>
+		<td class="failed" id="scenarios_failed">1</td>
+		<td class="known" id="scenarios_known">0</td>
+		<td class="undefined" id="scenarios_undefined">0</td>
+		<td id="scenarios_total">1</td>
+		<td id="scenarios_rate">
+				0%
+		</td>
+	</tr>
+	<tr><th>Steps</th>
+		<td class="passed" id="steps_passed">3</td>
+		<td class="failed" id="steps_failed">1</td>
+		<td class="known" id="steps_known">0</td>
+		<td class="undefined" id="steps_undefined">3</td>
+		<td id="steps_total">7</td>
+		<td id="steps_rate">
+				43%
+		</td>
+	</tr>
+</table>
+<div><b>Overall Duration: 0h 02m 14s</b></div>
+
+<a id="top"></a><h1>Table of Contents</h1>
+
+<ol>
+<li> <span class="failed"><a href="#feature-1add-new-offer-text">Add new offer text</a></span>
+	<ol>
+        <li> <span class="failed"><a href="#sc-15-add-new-offer-text;;;2"></a></span></li>
+    </ol></li>
+</ol>
+
+<h1>Detailed Results Report</h1>
+
+<table width="700px">
+	<tr class="failed"><td colspan="4"><b>Feature:</b> <a id="feature-1add-new-offer-text">Add new offer text</a></td></tr>
+    <tr class="failed">
+    	<td><small><b>Passed:</b> 0</small></td>
+        <td><small><b>Failed:</b> 1</small></td>
+        <td><small><b>Undefined:</b> 0</small></td>
+        <td><small>Duration: 134.01s</small></td>
+    </tr>
+	<tr class="failed">
+		<td colspan="4" style="padding-left:20px">
+		<table width="100%">
+				<tr class="failed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-15-add-new-offer-text;;;2"></a>
+					</td>
+				</tr>
+					<tr class="failed_description">
+			            <td colspan="4"><br>This scenario ensures that SMP user is able to add new offer text in console as part of PAYG H1 2018</br></td>
+		            </tr>
+                <tr class="failed">
+                	<td><small><b>Passed:</b> 3</small></td>
+                	<td><small><b>Failed:</b> 1</small></td>
+					<td><small><b>Undefined:</b> 3</small></td>
+					<td><small>Duration: 134.01s</small></td>
+				</tr>
+					<tr class="passed">
+						<td>Before</td>
+						<td colspan="2"></td>
+						<td width="100">99.71s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+                		</td>
+                	</tr>
+                <tr class="failed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> I am SMP user and I navigate to SMP http://sntb1-ppsmpw-13:8080/smp_jsecure/jsp/login.jsp url</td>
+                            		<td width="100">13.31s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Signin using Admin and Interact credentials</td>
+                            		<td width="100">6.96s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> click on SMP Administration link</td>
+                            		<td width="100">5.52s</td>
+                        		</tr>
+                            	<tr class="failed">
+                            		<td><b>And </b> click on Service Providers link and select 283</td>
+                            		<td width="100">3.70s</td>
+                        		</tr>
+    								<tr class="failed">
+										<td colspan="2">
+											<br>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document</br><br>  (Session info: chrome=71.0.3578.98)</br><br>  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)</br><br>Command duration or timeout: 0 milliseconds</br><br>For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html</br><br>Build info: version: &#39;3.6.0&#39;, revision: &#39;6fbf3ec767&#39;, time: &#39;2017-09-27T15:28:36.4Z&#39;</br><br>System info: host: &#39;LASST240940&#39;, ip: &#39;10.172.38.245&#39;, os.name: &#39;Windows 7&#39;, os.arch: &#39;x86&#39;, os.version: &#39;6.1&#39;, java.version: &#39;1.8.0_144&#39;</br><br>Driver info: org.openqa.selenium.chrome.ChromeDriver</br><br>Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\ssankar4\AppData\Local\Temp\scoped_dir8512_17940}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.98, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]</br><br>Session ID: d4a4ae97258182d2bd22edce867496c4</br><br>	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)</br><br>	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)</br><br>	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)</br><br>	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)</br><br>	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)</br><br>	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)</br><br>	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)</br><br>	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)</br><br>	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)</br><br>	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)</br><br>	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)</br><br>	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)</br><br>	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)</br><br>	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)</br><br>	at actionsPerformed.SMPAdminPageActions.Click_ServiceProvider(SMPAdminPageActions.java:30)</br><br>	at steps.SMP_Scenarios.click_on_Service_Providers_link(SMP_Scenarios.java:363)</br><br>	at ✽.And click on Service Providers link and select 283(Features/Pay and Go SMP/Add new offer text.feature:9)</br><br></br>
+										</td>
+									</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> click on Notifications link</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> click on Offers tab and Create new link</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> fill in details BIGDATABUNDLE10v2 and Subscribe With Chg and click Add</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+					<tr class="passed">
+						<td>After</td>
+						<td colspan="2"></td>
+						<td width="100">4.82s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+						</td>
+                	</tr>
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+		</table>
+	</td></tr><tr><td colspan="5"></td></tr>
+</table>
+
+	</body>
+</html>

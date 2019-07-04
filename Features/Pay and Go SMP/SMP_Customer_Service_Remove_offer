@@ -1,0 +1,17 @@
+Feature:Customer Service ove
+  @Web
+  Scenario Outline:
+  This test scenario ensures that SMP user ia able to Remove the Services
+
+    Given I am SMP user and I navigate to SMP <TB> url
+    And  Signin using <Username> and <Password> credentials
+    And click on Customer Service link
+    And enter <MSISDN> and click on Search
+    And click on Services Remove tab
+    And select <offer> and Click Delete button
+
+
+    Examples:
+
+      |TB                                                    |Username|Password |MSISDN       |offer|
+      |http://sntb1-ppsmpw-11:8080/smp_jsecure/jsp/login.jsp |Admin   |SW50ZXJhY3Q= |07347161875  |ALLOC|

@@ -1,0 +1,16 @@
+Feature: Add new LUAQ configuration
+
+  @Web
+  Scenario Outline:
+  This scenario ensures that SMP user is able to add new LUAQ configuration
+    Given I am SMP user and I navigate to SMP <TB> url
+    And Signin using <username> and <password> credentials
+    And click on SMP Administration link
+    And click on LUAQ configurations link
+    And click on Create New under LUAQ
+    And select <SP> <rateplan> <Balancethreshold> <Amount> <Daysuntilpenalty> <penalty> <warndate> and click on Add
+
+    Examples:
+      |TB                                                            |username |password |SP       |rateplan|Balancethreshold|Amount|Daysuntilpenalty|penalty|warndate|
+      |http://sntb1-ppsmpw-13:8080/smp_jsecure/jsp/login.jsp         |Admin    |SW50ZXJhY3Q=|O2 Online|IPAD    |1.00           |1.00  |7               |0.25   |7       |
+

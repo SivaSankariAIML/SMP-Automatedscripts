@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="eCommRegression" parallel="tests" thread-count="2">
+
+	<test name="LoginTest-FF">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="testRunner.RunnerTest">
+			</class>
+		</classes>
+	</test>
+
+	<test name="LoginTest-Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testRunner.RunnerTest">
+			</class>
+		</classes>
+	</test>
+</suite>
+

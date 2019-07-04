@@ -1,0 +1,16 @@
+Feature: Regression of ruleparameter creation journey
+
+  @Paygsmsresponses
+Scenario Outline: Create a new ruleparameter in PAYG.
+
+    Given I am SMP user and I navigate to SMP <TB> url
+    And Signin using <username> and <password> credentials
+    Then i click on the SMP adminstration and clicks on Ruleparameter
+    And Click on create new button and enter the <value> <description> <enddate>
+    When i click on the save button the rule should be added
+
+Examples:
+
+|TB                                                   |username|password|value |description|enddate   |
+|http://sntb2-ppsmpw-41:8080/smp_jsecure/jsp/login.jsp|Admin   |SW50ZXJhY3Q=|SMS   |testingdec |Tesc      |
+

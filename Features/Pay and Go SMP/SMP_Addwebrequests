@@ -1,0 +1,19 @@
+Feature:Add new Web Requests
+
+  @Web
+
+  Scenario Outline:
+
+  This test scenario ensures that SMP user is able to add new web request
+
+    Given I am SMP user and I navigate to SMP <TB> url
+    And Signin using <username> and <password> credentials
+    And click on SMP Administration link
+    And click on Requests and click on Create New
+    And enter <SPID> <Plan> <BP> <ReqID> <VRS>  and click Add
+
+
+    Examples:
+
+      |TB                                                            |username |password |SPID     |Plan|BP             |ReqID     |VRS                      |
+      |http://sntb2-ppsmpw-41:8080/smp_jsecure/jsp/login.jsp         |Admin    |SW50ZXJhY3Q= |O2 Online|IPAD|(102) Check MMS|Offer Info|131 Unsub MBI EUR50MB7DAY|

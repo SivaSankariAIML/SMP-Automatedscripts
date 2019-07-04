@@ -1,0 +1,128 @@
+[
+  {
+    "source": "^click on Offers tab and Create new link$",
+    "steps": [
+      {
+        "name": "click on Offers tab and Create new link",
+        "aggregatedDurations": {
+          "average": 7.270992386,
+          "median": 7.270992386
+        },
+        "durations": [
+          {
+            "duration": 7.270992386,
+            "location": "Features/Pay and Go SMP/Add new offer text.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I am SMP user and I navigate to SMP ([^\"]*) url$",
+    "steps": [
+      {
+        "name": "I am SMP user and I navigate to SMP http://sntb1-ppsmpw-13:8080/smp_jsecure/jsp/login.jsp url",
+        "aggregatedDurations": {
+          "average": 19.239663625,
+          "median": 19.239663625
+        },
+        "durations": [
+          {
+            "duration": 19.239663625,
+            "location": "Features/Pay and Go SMP/Add new offer text.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^click on SMP Administration link$",
+    "steps": [
+      {
+        "name": "click on SMP Administration link",
+        "aggregatedDurations": {
+          "average": 3.965070485,
+          "median": 3.965070485
+        },
+        "durations": [
+          {
+            "duration": 3.965070485,
+            "location": "Features/Pay and Go SMP/Add new offer text.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^click on Service Providers link and select ([^\"]*)$",
+    "steps": [
+      {
+        "name": "click on Service Providers link and select 283",
+        "aggregatedDurations": {
+          "average": 4.681229941,
+          "median": 4.681229941
+        },
+        "durations": [
+          {
+            "duration": 4.681229941,
+            "location": "Features/Pay and Go SMP/Add new offer text.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^fill details ([^\"]*) and ([^\"]*) and ([^\"]*)$",
+    "steps": [
+      {
+        "name": "fill details BIGDATABUNDLE10v2 and Subscribe With Chg and For testing",
+        "aggregatedDurations": {
+          "average": 7.387235682,
+          "median": 7.387235682
+        },
+        "durations": [
+          {
+            "duration": 7.387235682,
+            "location": "Features/Pay and Go SMP/Add new offer text.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^click on Notifications link$",
+    "steps": [
+      {
+        "name": "click on Notifications link",
+        "aggregatedDurations": {
+          "average": 14.91418587,
+          "median": 14.91418587
+        },
+        "durations": [
+          {
+            "duration": 14.91418587,
+            "location": "Features/Pay and Go SMP/Add new offer text.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Signin using ([^\"]*) and ([^\"]*) credentials$",
+    "steps": [
+      {
+        "name": "Signin using Admin and SW50ZXJhY3Q\u003d credentials",
+        "aggregatedDurations": {
+          "average": 9.461564666,
+          "median": 9.461564666
+        },
+        "durations": [
+          {
+            "duration": 9.461564666,
+            "location": "Features/Pay and Go SMP/Add new offer text.feature:7"
+          }
+        ]
+      }
+    ]
+  }
+]

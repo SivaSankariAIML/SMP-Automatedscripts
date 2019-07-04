@@ -1,0 +1,314 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+.comment {font-family:courier;font-weight:normal;font-size:small;color:black;border:1px dashed black;background-color:silver}
+.tip {font-family:courier;font-weight:normal;font-size:small;color:white;background-color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: auto;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+</style>
+<title>Detailed Results Report</title>
+<meta charset="UTF-8" />
+</head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+<h1>Overview</h1>
+
+
+<table>
+	<tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>Total</th><th>%Passed</th></tr>
+	<tr><th>Features</th>
+		<td class="passed" id="features_passed">0</td>
+		<td class="failed" id="features_failed">1</td>
+		<td class="known" id="features_known">0</td>
+		<td class="undefined" id="features_undefined">0</td>
+		<td id="features_total">1</td>
+		<td id="features_rate">
+				0%
+		</td>
+	</tr>
+	<tr><th>Scenarios</th>
+		<td class="passed" id="scenarios_passed">0</td>
+		<td class="failed" id="scenarios_failed">1</td>
+		<td class="known" id="scenarios_known">0</td>
+		<td class="undefined" id="scenarios_undefined">0</td>
+		<td id="scenarios_total">1</td>
+		<td id="scenarios_rate">
+				0%
+		</td>
+	</tr>
+	<tr><th>Steps</th>
+		<td class="passed" id="steps_passed">0</td>
+		<td class="failed" id="steps_failed">1</td>
+		<td class="known" id="steps_known">0</td>
+		<td class="undefined" id="steps_undefined">36</td>
+		<td id="steps_total">37</td>
+		<td id="steps_rate">
+				0%
+		</td>
+	</tr>
+</table>
+<div><b>Overall Duration: 0h 01m 12s</b></div>
+
+<a id="top"></a><h1>Table of Contents</h1>
+
+<ol>
+<li> <span class="failed"><a href="#feature-1cfu-mbbsimo30days">CFU_MbbSimo30days</a></span>
+	<ol>
+        <li> <span class="failed"><a href="#sc-45-cfu-mbbsimo30days;cfu-mbbsimo30days;;2">CFU_MbbSimo30days</a></span></li>
+    </ol></li>
+</ol>
+
+<h1>Detailed Results Report</h1>
+
+<table width="700px">
+	<tr class="failed"><td colspan="4"><b>Feature:</b> <a id="feature-1cfu-mbbsimo30days">CFU_MbbSimo30days</a></td></tr>
+		<tr class="failed_description">
+            <td colspan="4"><br>This scenario ensures that an upgrade customer is able to select a 12 months tablets tariff under the simo tab in upgrade options page</br></td>
+        </tr>
+    <tr class="failed">
+    	<td><small><b>Passed:</b> 0</small></td>
+        <td><small><b>Failed:</b> 1</small></td>
+        <td><small><b>Undefined:</b> 0</small></td>
+        <td><small>Duration: 72.59s</small></td>
+    </tr>
+	<tr class="failed">
+		<td colspan="4" style="padding-left:20px">
+		<table width="100%">
+				<tr class="failed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-45-cfu-mbbsimo30days;cfu-mbbsimo30days;;2">CFU_MbbSimo30days</a>
+					</td>
+				</tr>
+                <tr class="failed">
+                	<td><small><b>Passed:</b> 0</small></td>
+                	<td><small><b>Failed:</b> 1</small></td>
+					<td><small><b>Undefined:</b> 36</small></td>
+					<td><small>Duration: 72.59s</small></td>
+				</tr>
+					<tr class="passed">
+						<td>Before</td>
+						<td colspan="2"></td>
+						<td width="100">33.57s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+                		</td>
+                	</tr>
+                <tr class="failed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="failed">
+                            		<td><b>Given </b> I am an Existing user and Navigates to Signin page</td>
+                            		<td width="100">21.99s</td>
+                        		</tr>
+    								<tr class="failed">
+										<td colspan="2">
+											<br>java.lang.AssertionError: Unable to do navigate to signin page</br><br>	at org.testng.Assert.fail(Assert.java:94)</br><br>	at steps.E2EOrderPlaced_Steps.i_am_an_Existing_user_and_Navigates_to_Signin_page(E2EOrderPlaced_Steps.java:432)</br><br>	at ✽.Given I am an Existing user and Navigates to Signin page(Features/JanuaryRelease2018/Functional/CFD2235/CFU_MbbSimo30days.feature:5)</br><br></br>
+										</td>
+									</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> Signin using valid ahgt12@gmail.com and test123 credentials</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> Navigate to upgrade &gt; upgrade now</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> I click on &#39;Sim only Tariff&#39; tab</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> verify that the url has simo at the end</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>Then </b> the &#39;Phones&#39; button should be selected by default</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> click on the &#39;MBB&#39; button</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> the two contract lenght should be displayed</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> all the tariffs under twelve months should be displayed</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> if Configured is configured then display the banner</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> verify that &#39;Why choose an O2 Pay Monthly sim&#39; is not displayed in upgrade options page</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> the data filters is displayed</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>When </b> I click on respective high data filter</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>Then </b> Data filter button should be in &#39;selected&#39; state</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> I should see appropriate tariffs based on the selected data filter Monthly data (Low to High)</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> the &#39;sorting dropdown&#39; is displayed just below the toggle buttons sections</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> verify that the upfront sort options is not present in the &#39;sorting dropdown&#39;</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>Then </b> I should see data filters buttons next to existing sort drop-down for PAYM/SIMO tariffs Monthly data (High to low</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> If I select ANY sort option Monthly data (High to low from the drop-down</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>Then </b> I should see tariffs relevant to selected sort option Monthly data (High to low &amp; filter option &lt;filtername&gt;</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>When </b> I deselect filter button</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>Then </b> I should see tariffs based on the selected sort option Monthly data (High to low</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> Click on different 30 Days  Months Tariff in Tab</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> Click on &#39;Select&#39; CTA to buy a tariff</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> copy text SIM delivery required or not is displayed</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> Click on browser back arrow and land on Basket page</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> I click on &#39;Sim only Tariff&#39; tab</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> verify that the url has simo at the end</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> Click on &#39;Select&#39; CTA to buy a tariff</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> Click on Other radio button</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> Click on browser back arrow and land on Basket page</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>Then </b> &#39;Checkout In Progress&#39; page is displayed</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>Then </b> click on &#39;Finish checking out with your order&#39; link</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> copy text SIM delivery required or not is displayed</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> Select &#39;I’ll keep my current sim&#39; option</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="undefined">
+                            		<td><b>And </b> Click on &#39;I agree to the terms and condition&#39; checkbox</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> Click on &#39;Place your order&#39; CTA</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+					<tr class="passed">
+						<td>After</td>
+						<td colspan="2"></td>
+						<td width="100">17.03s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+						</td>
+                	</tr>
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+		</table>
+	</td></tr><tr><td colspan="5"></td></tr>
+</table>
+
+	</body>
+</html>

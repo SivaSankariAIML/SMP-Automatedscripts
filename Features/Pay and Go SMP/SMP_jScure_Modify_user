@@ -1,0 +1,16 @@
+Feature: Modify jSecure user
+
+  @Web
+  Scenario Outline:
+  This scenario ensures that SMP user is able to add an user through jSecure admin
+    Given I am SMP user and I navigate to SMP <TB> url
+    And Signin using <username> and <password> credentials
+    And click on jSecure admin link
+    And click on ViewModifyDelete link under users
+    And click on Modify link for <Username>
+    And modify <firstname> <lastname> <group> and click Modify
+
+    Examples:
+      |TB                                                            |username |password |Username|firstname|lastname||group       |
+      |http://sntb1-ppsmpw-13:8080/smp_jsecure/jsp/login.jsp         |Admin    |SW50ZXJhY3Q=|Testwert|Test000  |werty000||TestGroup108|
+

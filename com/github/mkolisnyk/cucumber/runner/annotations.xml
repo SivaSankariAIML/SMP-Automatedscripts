@@ -1,0 +1,5 @@
+<root>
+    <item name='com.github.mkolisnyk.cucumber.runner.ExtendedTestNGRunner'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>

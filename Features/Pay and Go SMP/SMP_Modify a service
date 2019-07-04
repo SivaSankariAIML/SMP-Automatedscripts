@@ -1,0 +1,21 @@
+Feature:Modify SMP service
+
+  @Web
+
+  Scenario Outline:
+
+  This test scenario ensures that SMP user is able to modify a service
+
+    Given I am SMP user and I navigate to SMP <TB> url
+    And Signin using <username> and <password> credentials
+    And click on SMP Administration link
+    And click on Services
+    And click on Modify link against <name>
+    And modify <description> and click on Modify and OK
+
+
+
+    Examples:
+
+      |TB                                                            |username |password |name  |description     |
+      |http://sntb1-ppsmpw-13:8080/smp_jsecure/jsp/login.jsp         |Admin    |SW50ZXJhY3Q=|ALLOC  |Allocate in ABS |

@@ -1,0 +1,16 @@
+Feature: Regression of actionset creation journey
+
+  @Paygsmsresponses
+  Scenario Outline: Create a new actionset in PAYG.
+
+    Given I am SMP user and I navigate to SMP <TB> url
+    And Signin using <username> and <password> credentials
+    Then i click on the SMP administration and clicks on Actionset
+    And Click on createnew button and enter the <id> <description> <Action> <Planid> <offer> <category> <response> <sessionactid> <startdate> <enddate>
+    When i click on the save button the actionset should be added
+
+    Examples:
+
+      |TB                                                   |username|password|id |description|Action     |planid|offer |category         |response|sessionactid|startdate|enddate|
+      |http://sntb1-ppsmpw-13:8080/smp_jsecure/jsp/login.jsp|Admin   |SW50ZXJhY3Q=|SMS|testingdec |O2 Online  |IPAD|Tesco   |Sytem Error (997)|        |            |         |       |
+

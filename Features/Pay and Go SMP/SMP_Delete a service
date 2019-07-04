@@ -1,0 +1,18 @@
+Feature:Delete SMP service
+
+  @Web
+
+  Scenario Outline:
+
+  This test scenario ensures that SMP user is able to delete a service
+
+    Given I am SMP user and I navigate to SMP <TB> url
+    And Signin using <username> and <password> credentials
+    And click on SMP Administration link
+    And click on Services
+    And click on Delete checkbox against <name> and Delete
+
+    Examples:
+
+      |TB                                                            |username |password |name  |
+      |http://sntb1-ppsmpw-13:8080/smp_jsecure/jsp/login.jsp         |Admin    |SW50ZXJhY3Q=|ALLOC |

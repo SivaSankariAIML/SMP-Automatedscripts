@@ -1,0 +1,179 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+.comment {font-family:courier;font-weight:normal;font-size:small;color:black;border:1px dashed black;background-color:silver}
+.tip {font-family:courier;font-weight:normal;font-size:small;color:white;background-color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: auto;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+</style>
+<title>Detailed Results Report</title>
+<meta charset="UTF-8" />
+</head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+<h1>Overview</h1>
+
+
+<table>
+	<tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>Total</th><th>%Passed</th></tr>
+	<tr><th>Features</th>
+		<td class="passed" id="features_passed">0</td>
+		<td class="failed" id="features_failed">1</td>
+		<td class="known" id="features_known">0</td>
+		<td class="undefined" id="features_undefined">0</td>
+		<td id="features_total">1</td>
+		<td id="features_rate">
+				0%
+		</td>
+	</tr>
+	<tr><th>Scenarios</th>
+		<td class="passed" id="scenarios_passed">0</td>
+		<td class="failed" id="scenarios_failed">1</td>
+		<td class="known" id="scenarios_known">0</td>
+		<td class="undefined" id="scenarios_undefined">0</td>
+		<td id="scenarios_total">1</td>
+		<td id="scenarios_rate">
+				0%
+		</td>
+	</tr>
+	<tr><th>Steps</th>
+		<td class="passed" id="steps_passed">0</td>
+		<td class="failed" id="steps_failed">1</td>
+		<td class="known" id="steps_known">0</td>
+		<td class="undefined" id="steps_undefined">5</td>
+		<td id="steps_total">6</td>
+		<td id="steps_rate">
+				0%
+		</td>
+	</tr>
+</table>
+<div><b>Overall Duration: 0h 00m 00s</b></div>
+
+<a id="top"></a><h1>Table of Contents</h1>
+
+<ol>
+<li> <span class="failed"><a href="#feature-1add-new-offer-text">Add new offer text</a></span>
+	<ol>
+        <li> <span class="failed"><a href="#sc-13-add-new-offer-text;;;2"></a></span></li>
+    </ol></li>
+</ol>
+
+<h1>Detailed Results Report</h1>
+
+<table width="700px">
+	<tr class="failed"><td colspan="4"><b>Feature:</b> <a id="feature-1add-new-offer-text">Add new offer text</a></td></tr>
+    <tr class="failed">
+    	<td><small><b>Passed:</b> 0</small></td>
+        <td><small><b>Failed:</b> 1</small></td>
+        <td><small><b>Undefined:</b> 0</small></td>
+        <td><small>Duration: .27s</small></td>
+    </tr>
+	<tr class="failed">
+		<td colspan="4" style="padding-left:20px">
+		<table width="100%">
+				<tr class="failed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-13-add-new-offer-text;;;2"></a>
+					</td>
+				</tr>
+                <tr class="failed">
+                	<td><small><b>Passed:</b> 0</small></td>
+                	<td><small><b>Failed:</b> 1</small></td>
+					<td><small><b>Undefined:</b> 5</small></td>
+					<td><small>Duration: .27s</small></td>
+				</tr>
+                <tr class="failed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="failed">
+                            		<td><b>Given </b> I am SMP user and I navigate to SMP url</td>
+                            		<td width="100">0.18s</td>
+                        		</tr>
+    								<tr class="failed">
+										<td colspan="2">
+											<br>java.lang.AssertionError: unable to get title</br><br>	at org.testng.Assert.fail(Assert.java:94)</br><br>	at steps.E2EOrderPlaced_Steps.I_am_SMP_user_and_I_navigate_to_SMP_TB_url(E2EOrderPlaced_Steps.java:10303)</br><br>	at ✽.Given I am SMP user and I navigate to SMP url(Features/Pay and Go SMP/Add new offer text.feature:4)</br><br></br>
+										</td>
+									</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> Signin using valid SMP Admin and Interact</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> click on SMP Administration link</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> click on Service Providers link</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> click on Notifications link</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="skipped">
+                            		<td><b>And </b> click on Offers tab and Create new link</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+					<tr class="failed">
+						<td>After</td>
+						<td colspan="2"></td>
+						<td width="100">0.09s</td>
+					</tr>
+                	<tr class="failed">
+                		<td colspan="4">
+							<br>java.lang.NullPointerException</br><br>	at steps.Hooks.embedScreenshot(Hooks.java:99)</br><br>	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</br><br>	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</br><br>	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</br><br>	at java.lang.reflect.Method.invoke(Method.java:498)</br><br>	at cucumber.runtime.Utils$1.call(Utils.java:40)</br><br>	at cucumber.runtime.Timeout.timeout(Timeout.java:16)</br><br>	at cucumber.runtime.Utils.invoke(Utils.java:34)</br><br>	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)</br><br>	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)</br><br>	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)</br><br>	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)</br><br>	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)</br><br>	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)</br><br>	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)</br><br>	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)</br><br>	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)</br><br>	at com.github.mkolisnyk.cucumber.runner.ExtendedTestNGRunner.feature(ExtendedTestNGRunner.java:69)</br><br>	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</br><br>	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</br><br>	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</br><br>	at java.lang.reflect.Method.invoke(Method.java:498)</br><br>	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)</br><br>	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)</br><br>	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)</br><br>	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)</br><br>	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)</br><br>	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)</br><br>	at org.testng.TestRunner.privateRun(TestRunner.java:756)</br><br>	at org.testng.TestRunner.run(TestRunner.java:610)</br><br>	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)</br><br>	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)</br><br>	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)</br><br>	at org.testng.SuiteRunner.run(SuiteRunner.java:289)</br><br>	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)</br><br>	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)</br><br>	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)</br><br>	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)</br><br>	at org.testng.TestNG.runSuites(TestNG.java:1133)</br><br>	at org.testng.TestNG.run(TestNG.java:1104)</br><br>	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)</br><br>	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)</br><br></br>
+						</td>
+                	</tr>
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+		</table>
+	</td></tr><tr><td colspan="5"></td></tr>
+</table>
+
+	</body>
+</html>

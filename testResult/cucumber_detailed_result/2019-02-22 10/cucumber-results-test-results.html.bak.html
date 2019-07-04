@@ -1,0 +1,198 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+.comment {font-family:courier;font-weight:normal;font-size:small;color:black;border:1px dashed black;background-color:silver}
+.tip {font-family:courier;font-weight:normal;font-size:small;color:white;background-color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: auto;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+</style>
+<title>Detailed Results Report</title>
+<meta charset="UTF-8" />
+</head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+<h1>Overview</h1>
+
+
+<table>
+	<tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>Total</th><th>%Passed</th></tr>
+	<tr><th>Features</th>
+		<td class="passed" id="features_passed">0</td>
+		<td class="failed" id="features_failed">1</td>
+		<td class="known" id="features_known">0</td>
+		<td class="undefined" id="features_undefined">0</td>
+		<td id="features_total">1</td>
+		<td id="features_rate">
+				0%
+		</td>
+	</tr>
+	<tr><th>Scenarios</th>
+		<td class="passed" id="scenarios_passed">0</td>
+		<td class="failed" id="scenarios_failed">1</td>
+		<td class="known" id="scenarios_known">0</td>
+		<td class="undefined" id="scenarios_undefined">0</td>
+		<td id="scenarios_total">1</td>
+		<td id="scenarios_rate">
+				0%
+		</td>
+	</tr>
+	<tr><th>Steps</th>
+		<td class="passed" id="steps_passed">7</td>
+		<td class="failed" id="steps_failed">1</td>
+		<td class="known" id="steps_known">0</td>
+		<td class="undefined" id="steps_undefined">0</td>
+		<td id="steps_total">8</td>
+		<td id="steps_rate">
+				88%
+		</td>
+	</tr>
+</table>
+<div><b>Overall Duration: 0h 02m 30s</b></div>
+
+<a id="top"></a><h1>Table of Contents</h1>
+
+<ol>
+<li> <span class="failed"><a href="#feature-1credit-bonus-money">Credit Bonus Money</a></span>
+	<ol>
+        <li> <span class="failed"><a href="#sc-18-credit-bonus-money;;;2"></a></span></li>
+    </ol></li>
+</ol>
+
+<h1>Detailed Results Report</h1>
+
+<table width="700px">
+	<tr class="failed"><td colspan="4"><b>Feature:</b> <a id="feature-1credit-bonus-money">Credit Bonus Money</a></td></tr>
+    <tr class="failed">
+    	<td><small><b>Passed:</b> 0</small></td>
+        <td><small><b>Failed:</b> 1</small></td>
+        <td><small><b>Undefined:</b> 0</small></td>
+        <td><small>Duration: 150.05s</small></td>
+    </tr>
+	<tr class="failed">
+		<td colspan="4" style="padding-left:20px">
+		<table width="100%">
+				<tr class="failed">
+					<td colspan="4">
+						<b>Scenario Outline:</b> <a id="sc-18-credit-bonus-money;;;2"></a>
+					</td>
+				</tr>
+					<tr class="failed_description">
+			            <td colspan="4"><br>This test scenario ensures that SMP user is able to credit real money</br></td>
+		            </tr>
+                <tr class="failed">
+                	<td><small><b>Passed:</b> 7</small></td>
+                	<td><small><b>Failed:</b> 1</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 150.05s</small></td>
+				</tr>
+					<tr class="passed">
+						<td>Before</td>
+						<td colspan="2"></td>
+						<td width="100">80.43s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+                		</td>
+                	</tr>
+                <tr class="failed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> I am SMP user and I navigate to SMP http://sntb1-ppsmpw-11:8080/smp_jsecure/jsp/login.jsp url</td>
+                            		<td width="100">30.36s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Signin using Admin and Interact credentials</td>
+                            		<td width="100">9.55s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> click on Customer Service link</td>
+                            		<td width="100">8.08s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> enter 07347161875 and click on Search</td>
+                            		<td width="100">5.50s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Click Recharge Link under the Menu</td>
+                            		<td width="100">4.10s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Click on Balance Tab</td>
+                            		<td width="100">0.84s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Click on Bonus Money</td>
+                            		<td width="100">0.91s</td>
+                        		</tr>
+                            	<tr class="failed">
+                            		<td><b>And </b> Enter the 2 and select the options Internal Testing and click on Credit button</td>
+                            		<td width="100">4.37s</td>
+                        		</tr>
+    								<tr class="failed">
+										<td colspan="2">
+											<br>java.lang.AssertionError: Failed to credit real money</br><br>	at org.testng.Assert.fail(Assert.java:94)</br><br>	at steps.SMP_Scenarios.Enter_the_amount_and_select_the_options_from_reasoncode(SMP_Scenarios.java:572)</br><br>	at ✽.And Enter the 2 and select the options Internal Testing and click on Credit button(Features/Pay and Go SMP/CreditBonusMoney:13)</br><br></br>
+										</td>
+									</tr>
+						</table>
+					</td>
+				</tr>
+				
+					<tr class="passed">
+						<td>After</td>
+						<td colspan="2"></td>
+						<td width="100">5.91s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+						</td>
+                	</tr>
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+		</table>
+	</td></tr><tr><td colspan="5"></td></tr>
+</table>
+
+	</body>
+</html>
