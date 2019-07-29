@@ -30,4 +30,6 @@ public class SMPOfferNotificationPage {
     @FindBy(how=How.XPATH,using="//*[@id=\"enddate\"]")
     public static WebElement enddate;
 
+    @FindBy(how=How.XPATH,using="//*[@id=\"Cancel_button\"]")
+    public static WebElement confirm_cancelButton;
 }

@@ -1,0 +1,18 @@
+Feature:Modify SMP bundle
+
+  @Web
+
+  Scenario Outline:
+
+  This test scenario ensures that SMP user is able to modify bundle
+
+    Given I am SMP user and I navigate to SMP <TB> url
+    And Signin using <username> and <password> credentials
+    And click on SMP Administration link
+    And click on Bundle Configurations modify <bundledescription> against <bundlename>
+    And check if Bundle Configuration view page is returned
+
+    Examples:
+
+      |TB                                                    |username |password |bundledescription|bundlename|
+      |http://sntb1-ppsmpw-13:8080/smp_jsecure/jsp/login.jsp |Admin    |SW50ZXJhY3Q=|Not to be used   |4GADD     |

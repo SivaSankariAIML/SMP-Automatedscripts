@@ -18,4 +18,9 @@ public class SMPConsolePage {
     @FindBy(how = How.XPATH,using = "/html/body/form[1]/table/tbody/tr/td/table[2]/tbody/tr[1]/td[2]/table/tbody/tr[4]/td/div/input")
     public static WebElement Search;
 
+    @FindBy(how = How.XPATH,using = "//*[@title=\"Home\"]")
+    public static WebElement Home;
+
+    @FindBy(how = How.XPATH,using = "//*[@id=\"home\"]//a")
+    public static WebElement Console;
 }

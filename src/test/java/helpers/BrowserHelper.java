@@ -47,6 +47,7 @@ public class BrowserHelper extends Environment{
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("disable-extensions");
 			options.addArguments("--start-maximized");
+			//options.addArguments("user-data-dir=Browsers/userdata/");
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 
 			driver = new ChromeDriver(capabilities);

@@ -1,0 +1,18 @@
+Feature:Add new SMP bundle
+
+  @Web
+  Scenario Outline:
+
+  This test scenario ensures that SMP user is able to add new bundle
+
+    Given I am SMP user and I navigate to SMP <TB> url
+    And Signin using <username> and <password> credentials
+    And click on SMP Administration link
+    And click on Bundle Configurations add bundle <bundlename> <description> <service1> <service2> <service3> <service4>
+    And add partition <SG> <PartType> <PartAction> <Value> <LifeSpan> and click on Add
+
+
+    Examples:
+
+      |TB                                                    |username |password    |bundlename |description|service1|service2|service3|service4|SG              |PartType|PartAction|Value|LifeSpan|
+      |http://sntb1-ppsmpw-13:8080/smp_jsecure/jsp/login.jsp |Admin    |SW50ZXJhY3Q=|Test       |Not to use |4GADD   |ALLOC   |MMS     |GPRS    |10 Big Bund Data|Purchase|=         |1000 |0       |

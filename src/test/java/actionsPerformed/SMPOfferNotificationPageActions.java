@@ -36,40 +36,40 @@ public class SMPOfferNotificationPageActions extends Environment {
         offerselect.selectByVisibleText(offer);
     }
 
-    public static void Selectnotification(String notID,String sms) throws InterruptedException, IOException
+    public static void Selectnotification(String notification,String sms) throws InterruptedException, IOException
     {
 
         PageFactory.initElements(driver, SMPOfferNotificationPage.class);
         driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
         Screenshots.captureScreenshot();
         Select notifyselect = new Select(SMPOfferNotificationPage.notifications);
-        notifyselect.selectByVisibleText(notID);
+        notifyselect.selectByVisibleText(notification);
         SMPOfferNotificationPage.smsmessage.sendKeys(sms);
         SMPOfferNotificationPage.Addbutton.click();
+        //Don't Commit Changes
+        Thread.sleep(2000);
+        SMPOfferNotificationPage.confirm_cancelButton.click(); // Cancel add action
         }
 
-    public static void Modifylink(String sms,String offer) throws InterruptedException,IOException {
+    public static void Modifylink(String notification,String offerName) throws InterruptedException,IOException {
         PageFactory.initElements(driver, SMPOfferNotificationPage.class);
         PageFactory.initElements(driver, SMPNotificationsPage.class);
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         Screenshots.captureScreenshot();
         SMPNotificationsPage.offers.click();
-        List<WebElement> ff = driver.findElements(By.xpath("//*[@name='offerNotificationCurrentForm']/table/tbody/tr"));
-        int gg = ff.size();
-        System.out.println("Table size.....: " + gg);
-        for (int k = 3; k < gg; k++) {
-            List<WebElement> hh = driver.findElements(By.xpath("//*[@name='offerNotificationCurrentForm']/table/tbody/tr[" + k + "]/td[3]"));
-            List<WebElement> jj = driver.findElements(By.xpath("//*[@name='offerNotificationCurrentForm']/table/tbody/tr[" + k + "]/td[4]"));
-            int l = 0;
-            System.out.println(offer);
-            System.out.println(sms);
-            if (hh.get(l).getText().equalsIgnoreCase(sms) && jj.get(l).getText().equalsIgnoreCase(offer)) {
-                System.out.println("Test1");
+        List<WebElement> trOffers = driver.findElements(By.xpath("//*[@name='offerNotificationCurrentForm']/table/tbody/tr"));
+        int trCount = trOffers.size();
+        System.out.println("Offers Table size.....: " + trCount);
+        System.out.println(offerName);
+        System.out.println(notification);
+        for (int k = 3; k < trCount; k++) {
+            List<WebElement> weOffer = driver.findElements(By.xpath("//*[@name='offerNotificationCurrentForm']/table/tbody/tr[" + k + "]/td[3]"));
+            List<WebElement> weNotification = driver.findElements(By.xpath("//*[@name='offerNotificationCurrentForm']/table/tbody/tr[" + k + "]/td[4]"));
+            if (weOffer.get(0).getText().equalsIgnoreCase(offerName) && weNotification.get(0).getText().equalsIgnoreCase(notification)) {
+                System.out.println("Offer: "+ weOffer.get(0).getText() +" and notification :" + weNotification.get(0).getText()+" found on the page");
                 driver.findElement(By.xpath("//*[@name='offerNotificationCurrentForm']/table/tbody/tr[" + k + "]/td[1]")).click();
                 break;
             }
-
-            l++;
         }
     }
 
@@ -78,9 +78,17 @@ public class SMPOfferNotificationPageActions extends Environment {
         PageFactory.initElements(driver, SMPOfferNotificationPage.class);
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         Screenshots.captureScreenshot();
+        //Clear the Existing data
+        SMPOfferNotificationPage.smsmessage.clear();
+        SMPOfferNotificationPage.webmessage.click();
+        //Update New
         SMPOfferNotificationPage.smsmessage.sendKeys(smsmessage);
         SMPOfferNotificationPage.webmessage.sendKeys(webmessage);
-        //SMPOfferNotificationPage.Modifybutton.click();
+        SMPOfferNotificationPage.Modifybutton.click();
+
+        // Dont Commit Changes
+        Thread.sleep(2000);
+        SMPOfferNotificationPage.confirm_cancelButton.click();
     }
 
     public static void validation(String offer,String notID) throws InterruptedException,IOException

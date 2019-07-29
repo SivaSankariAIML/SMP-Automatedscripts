@@ -9,7 +9,8 @@ import GlobalActions.*;
 import actionsPerformed.*;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import gherkin.lexer.Pa;
+import helpers.MSExcel;
+import helpers.SMPDataStructure;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,9 +22,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import org.testng.Assert;
 
-import org.xhtmlrenderer.css.parser.property.PrimitivePropertyBuilders;
 import pageobjects.NewPAYGOffers;
-import pageobjects.SMPPartitionsPage;
 
 public class SMP_Scenarios {
 
@@ -57,6 +56,7 @@ public class SMP_Scenarios {
      * ############## All the Below are for the Navigation Journeys
      */
     @Given("^I am SMP user and I navigate to SMP ([^\"]*) url$")
+    @When("^User navigate to SMP url ([^\"]*)$")
     public void I_am_SMP_user_and_I_navigate_to_SMP_TB_url(String url) {
         try {
             driver.get(url);
@@ -100,6 +100,32 @@ public class SMP_Scenarios {
             driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
             // PageFactory.initElements(driver,SMPConsolePageActions.class);
             SMPConsolePageActions.Select_SMPAdmin();
+            log.debug("test");
+            Screenshots.captureScreenshot();
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            log.debug("Cannot find Link");
+            Assert.fail("Cannot find link");
+        }
+    }
+    @And("^click on Home link$")
+    public void click_on_Home_link() {
+        try {
+            driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+            SMPConsolePageActions.Select_Home();
+            log.debug("test");
+            Screenshots.captureScreenshot();
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            log.debug("Cannot find Link");
+            Assert.fail("Cannot find link");
+        }
+    }
+    @And("^click on Console link$")
+    public void click_on_Console_link() {
+        try {
+            driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+            SMPConsolePageActions.Select_Console();
             log.debug("test");
             Screenshots.captureScreenshot();
         } catch (Exception e) {
@@ -343,6 +369,99 @@ public class SMP_Scenarios {
 
     }
 
+
+    @And("^Upload SMP test data tab \"([^\"]*)\"$")
+    public void read_SMP_test_data_tab(String tabName) throws IOException, InterruptedException {
+        MSExcel msExcel = new MSExcel();
+        msExcel.setTabName(tabName);
+        SMPDataStructure smpDataStructure = new SMPDataStructure("C:\\Automation\\SMP\\Configurations\\testData\\testdata_SMP.xlsx");
+        HashMap<String, String> sheetRow = new HashMap<String, String>();
+        String actionToPerform;
+        click_on_SMP_Administration_link();
+        int numColumns = msExcel.getLastCol(1);
+        String cellFontColor, cellBGColor;
+        for (int i=1;numColumns>0;i++) {
+            System.out.print("\n::"+i+"::");
+            actionToPerform="";
+            numColumns = msExcel.getLastCol(i); // numbers of column in the currentRow
+            for (int j = 0;j<numColumns; j++) {
+                cellFontColor="";
+                cellBGColor="";
+                sheetRow.put(msExcel.readCell(0, j).get("value"),msExcel.readCell(i, j).get("value"));
+                cellFontColor = msExcel.readCell(i, j).get("fontColor");
+                cellBGColor = msExcel.readCell(i, j).get("cellColor");
+                if(actionToPerform.equalsIgnoreCase("") && cellFontColor.equalsIgnoreCase("FF7030A0")){ //Purple
+                    actionToPerform="addNew";
+                }
+                if(actionToPerform.equalsIgnoreCase("") && cellFontColor.equalsIgnoreCase("FFFF0000")){ //Red
+                    actionToPerform="modify";
+                }
+                if(actionToPerform.equalsIgnoreCase("") && cellBGColor.equalsIgnoreCase("FFFFFF00")){ //Yellow
+                    actionToPerform="delete";
+                }
+            }
+            System.out.print(sheetRow);
+            // Actions for the first row
+            //Click
+            try {
+                if(actionToPerform.equalsIgnoreCase("addNew")) {
+                    System.out.println("\nInsert new data ...");
+                    addOfferText(sheetRow.get("SPID"), smpDataStructure.decode(sheetRow.get("OFFER"), "OFFERS REAL", "OFFER", "NAME"), "Subscribe With Chg", sheetRow.get("SMS_MESSAGE"));
+                }
+                if(actionToPerform.equalsIgnoreCase("delete")) {
+                    System.out.println("\ndeleting data ...");
+
+                }
+                if(actionToPerform.equalsIgnoreCase("modify")) {
+                    System.out.println("\nModify existing data ...");
+                    modifyOfferText(sheetRow.get("SPID"), smpDataStructure.decode(sheetRow.get("OFFER"), "OFFERS REAL", "OFFER", "NAME"),  "Balance Enquiry", sheetRow.get("SMS_MESSAGE"),sheetRow.get("WEB_MESSAGE")); //WebMessage
+
+                }
+                sheetRow.clear(); // Clearing the sheet
+            }catch(Exception ex){
+                System.out.println(ex.toString());
+                //msExcel.writeCell(i, 14,"FAIL");
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+            }
+        }
+
+    }
+//
+    public void addOfferText(String spid, String offerName,  String notificationId, String sms){
+        try {
+            click_on_Service_Providers_link(spid);
+            click_on_Notifications_link();
+            click_on_Offers_tab_and_Create_new_link();
+            fill_in_details_and_click_add(offerName, notificationId, sms); //notificationId not coming from Spreadsheet, Offer Text is derived from Offers REAL Tab
+            click_on_Home_link();
+            //click_on_Console_link();
+            Thread.sleep(1000);
+            //e.writeCell(i, 14,"SUCCESS");
+        }catch(Exception ex){
+            System.out.println(ex.toString());
+            //e.writeCell(i, 14,"FAIL");
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+    }
+    public void modifyOfferText(String spid, String offerName, String notificationId, String sms, String webMsg){
+        try {
+            click_on_Service_Providers_link(spid);
+            click_on_Notifications_link();
+            click_on_offers_tab_click_on_modify_link(notificationId,offerName);
+            modify_smsmessage_webmessage(sms,webMsg);
+            //check_if_notifications_home_page();
+            click_on_Home_link();
+            Thread.sleep(1000);
+
+        }catch(Exception ex){
+            System.out.println(ex.toString());
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+    }
+
     @And("^click on Service Providers link and select ([^\"]*)$")
     public void click_on_Service_Providers_link(String SPID) throws IOException, InterruptedException {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -376,7 +495,6 @@ public class SMP_Scenarios {
         SMPOfferNotificationPageActions.Selectoffer(offer);
         SMPOfferNotificationPageActions.Selectnotification(notID, sms);
 
-
         try {
             String pagetitle = driver.getTitle();
             log.debug("The Page title is " + pagetitle);
@@ -398,7 +516,6 @@ public class SMP_Scenarios {
         PageFactory.initElements(driver, SMPOfferNotificationPageActions.class);
         SMPOfferNotificationPageActions.Modifylink(sms, offer);
         Screenshots.captureScreenshot();
-
         try {
             String pagetitle = driver.getTitle();
             log.debug("The Page title is " + pagetitle);

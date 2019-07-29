@@ -41,7 +41,7 @@ import java.util.List;
 @CucumberOptions(plugin = {"html:testResult/cucumber-html-report",
         "json:testResult/cucumber.json", "pretty:testResult/cucumber-pretty.txt",
         "usage:testResult/cucumber-usage.json", "junit:testResult/cucumber-results.xml"},
-        features = {"Features//Pay and Go SMP//Add new offer text.feature"},
+        features = {"Features//Pay and Go SMP//SMP_OFFER_TEXT_REAL_v1.feature"},
         glue = {"steps"},
         tags = {})
 
