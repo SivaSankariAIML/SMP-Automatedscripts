@@ -2,34 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3431a87-97b1-4ffe-b872-0e6a8e54231a" name="Default" comment="Merge branch 'master' of https://bitbucket.org/ecommautomationteam/regression into Sharmi_19-02-2018&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Features/FebruaryRelease2018/Regression/Reg_Jan_ConsumerToAcceptTenDigitsPhoneNumber.feature&#10;#&#9;src/test/java/actionsPerformed/Agent_DealBuilderPageActions.java&#10;#&#9;src/test/java/actionsPerformed/DeliveryPageActions.java&#10;#&#9;src/test/java/actionsPerformed/PAYMandPAYGTariffAndExtrasPageActions.java&#10;#&#9;src/test/java/actionsPerformed/UpgradeCustomerPageActions.java&#10;#&#9;src/test/java/steps/E2EOrderPlaced_Steps.java">
-      <change afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_OFFER_TEXT_REAL_v1.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/Add new offer text.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/DeleteBundle" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/DeleteBundle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/PaygOffer.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/PaygOffer.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Add new Bundle" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Add new Bundle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Add new service" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Add new service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Add_LUAQ_new" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Add_LUAQ_new" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Add_Partition" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Add_Partition" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Delete a service" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Delete a service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Delete_Partitions" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Delete_Partitions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Delete_SGText.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Delete_SGText.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Modify Bundle" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Modify Bundle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Modify Offer Notification" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Modify Offer Notification.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Modify a service" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Modify a service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Modify_Partition" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Modify_Partition" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Modify_SGText.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Modify_SGText.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configurations/testData/testdata_SMP.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Configurations/testData/testdata_SMP.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/Add new offer text_Orignal.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/defunct/Add new offer text_Orignal.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Add_Partition" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/defunct/SMP_Add_Partition" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Modify_Partition" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/defunct/SMP_Modify_Partition" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_SERVICE_GROUP_LIST_Partition_v1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_SERVICE_GROUP_LIST_Partition_v1.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/VMApplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/VMApplication.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/VMLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/VMLog.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/VMTTCCLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/VMTTCCLog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/actionsPerformed/SMPConsolePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actionsPerformed/SMPConsolePageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/actionsPerformed/SMPOfferNotificationPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actionsPerformed/SMPOfferNotificationPageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/BrowserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/BrowserHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/SMPConsolePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjects/SMPConsolePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/SMPOfferNotificationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjects/SMPOfferNotificationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/actionsPerformed/SMPPartitionPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/actionsPerformed/SMPPartitionPageActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/SMPDataStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/SMPDataStructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjects/SMPPartitionsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjects/SMPPartitionsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/SMP_Scenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/SMP_Scenarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testRunner/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunner/RunnerTest.java" afterDir="false" />
     </list>
     <list id="9d0aef85-48ac-4e71-b67a-fff455014d99" name="New changelist" comment="New changelist" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,20 +44,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_OFFER_TEXT_REAL_v1.feature">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_SERVICE_GROUP_LIST_Partition_v1.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/actionsPerformed/SMPOfferNotificationPageActions.java">
+        <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/defunct/Add new offer text_Orignal.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="45" column="55" lean-forward="true" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+            <state relative-caret-position="283">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -81,16 +66,16 @@
         <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Modify Offer Notification.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/Add new offer text_Orignal.feature">
+        <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Delete_Partitions">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="204">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -98,8 +83,290 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/SMP_Scenarios.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="495" column="51" selection-start-line="495" selection-start-column="51" selection-end-line="495" selection-end-column="51" />
+            <state relative-caret-position="174">
+              <caret line="312" column="46" selection-start-line="312" selection-start-column="46" selection-end-line="312" selection-end-column="46" />
+              <folding>
+                <element signature="e#1608#1710#0" />
+                <element signature="e#1716#1795#0" />
+                <element signature="e#1800#1860#0" />
+                <element signature="e#1716#2469#0" />
+                <element signature="e#1995#2289#0" />
+                <element signature="e#2310#2462#0" />
+                <element signature="e#2475#3283#0" />
+                <element signature="e#2621#3004#0" />
+                <element signature="e#3025#3277#0" />
+                <element signature="e#3289#3864#0" />
+                <element signature="e#3397#3691#0" />
+                <element signature="e#3712#3858#0" />
+                <element signature="e#4340#4815#0" />
+                <element signature="e#4426#4642#0" />
+                <element signature="e#4663#4809#0" />
+                <element signature="e#4821#5296#0" />
+                <element signature="e#4899#5151#0" />
+                <element signature="e#5172#5290#0" />
+                <element signature="e#5303#5849#0" />
+                <element signature="e#5436#5687#0" />
+                <element signature="e#5708#5842#0" />
+                <element signature="e#5855#6551#0" />
+                <element signature="e#6101#6392#0" />
+                <element signature="e#6413#6545#0" />
+                <element signature="e#6557#7172#0" />
+                <element signature="e#6723#7024#0" />
+                <element signature="e#7045#7165#0" />
+                <element signature="e#7178#7762#0" />
+                <element signature="e#7362#7626#0" />
+                <element signature="e#7647#7755#0" />
+                <element signature="e#7768#8349#0" />
+                <element signature="e#7954#8213#0" />
+                <element signature="e#8234#8342#0" />
+                <element signature="e#8355#8852#0" />
+                <element signature="e#8437#8689#0" />
+                <element signature="e#8710#8846#0" />
+                <element signature="e#10670#10790#0" />
+                <element signature="e#11279#11387#0" />
+                <element signature="e#11876#11984#0" />
+                <element signature="e#11400#12240#0" />
+                <element signature="e#11716#12113#0" />
+                <element signature="e#12134#12234#0" />
+                <element signature="e#12247#12854#0" />
+                <element signature="e#12497#12721#0" />
+                <element signature="e#12742#12848#0" />
+                <element signature="e#12861#13412#0" />
+                <element signature="e#13066#13278#0" />
+                <element signature="e#13299#13405#0" />
+                <element signature="e#13419#14009#0" />
+                <element signature="e#13623#13877#0" />
+                <element signature="e#13898#14002#0" />
+                <element signature="e#14669#14848#1" />
+                <element signature="e#14831#14877#1" />
+                <element signature="e#15219#15284#1" />
+                <element signature="e#15423#15488#1" />
+                <element signature="e#14759#14787#0" />
+                <element signature="e#15758#15869#0" />
+                <element signature="e#15898#15958#0" />
+                <element signature="e#16579#16678#0" />
+                <element signature="e#16707#16759#0" />
+                <element signature="e#18178#18277#0" />
+                <element signature="e#18306#18358#0" />
+                <element signature="e#19769#19818#0" />
+                <element signature="e#20424#20481#0" />
+                <element signature="e#21311#21368#0" />
+                <element signature="e#19833#20241#0" />
+                <element signature="e#20247#20613#0" />
+                <element signature="e#20619#20981#0" />
+                <element signature="e#18468#18732#0" />
+                <element signature="e#18753#18925#0" />
+                <element signature="e#21995#22933#0" />
+                <element signature="e#19417#19681#0" />
+                <element signature="e#19702#19871#0" />
+                <element signature="e#22939#23854#0" />
+                <element signature="e#20360#20624#0" />
+                <element signature="e#20645#20792#0" />
+                <element signature="e#23861#24735#0" />
+                <element signature="e#21192#21456#0" />
+                <element signature="e#21477#21672#0" />
+                <element signature="e#24741#25355#0" />
+                <element signature="e#21850#22114#0" />
+                <element signature="e#22135#22293#0" />
+                <element signature="e#25361#26004#0" />
+                <element signature="e#22475#22763#0" />
+                <element signature="e#22784#22942#0" />
+                <element signature="e#26010#27259#0" />
+                <element signature="e#23168#24015#0" />
+                <element signature="e#23380#23476#1" />
+                <element signature="e#23524#23618#1" />
+                <element signature="e#23668#23758#1" />
+                <element signature="e#23809#23900#1" />
+                <element signature="e#24036#24196#0" />
+                <element signature="e#27265#27807#0" />
+                <element signature="e#24346#24546#0" />
+                <element signature="e#24567#24745#0" />
+                <element signature="e#27813#28337#0" />
+                <element signature="e#24877#25079#0" />
+                <element signature="e#25100#25274#0" />
+                <element signature="e#28343#28866#0" />
+                <element signature="e#25411#25608#0" />
+                <element signature="e#25629#25803#0" />
+                <element signature="e#28873#29536#0" />
+                <element signature="e#26065#26285#0" />
+                <element signature="e#26306#26474#0" />
+                <element signature="e#29542#30170#0" />
+                <element signature="e#26702#26921#0" />
+                <element signature="e#26942#27108#0" />
+                <element signature="e#30179#30765#0" />
+                <element signature="e#27265#27494#0" />
+                <element signature="e#27515#27703#0" />
+                <element signature="e#27714#28588#0" />
+                <element signature="e#27660#27673#0" />
+                <element signature="e#31651#32266#0" />
+                <element signature="e#27830#28072#0" />
+                <element signature="e#28093#28267#0" />
+                <element signature="e#28279#29197#0" />
+                <element signature="e#33195#33736#0" />
+                <element signature="e#29319#29546#0" />
+                <element signature="e#29567#29739#0" />
+                <element signature="e#33745#34352#0" />
+                <element signature="e#29911#30148#0" />
+                <element signature="e#30169#30355#0" />
+                <element signature="e#34363#34935#0" />
+                <element signature="e#30519#30751#0" />
+                <element signature="e#30772#30936#0" />
+                <element signature="e#34941#35604#0" />
+                <element signature="e#31121#31408#0" />
+                <element signature="e#31429#31607#0" />
+                <element signature="e#35610#36210#0" />
+                <element signature="e#31722#32014#0" />
+                <element signature="e#32035#32213#0" />
+                <element signature="e#36217#36877#0" />
+                <element signature="e#32411#32667#0" />
+                <element signature="e#32688#32878#0" />
+                <element signature="e#36884#37567#0" />
+                <element signature="e#33051#33343#0" />
+                <element signature="e#33364#33568#0" />
+                <element signature="e#37574#38205#0" />
+                <element signature="e#33769#34017#0" />
+                <element signature="e#34038#34206#0" />
+                <element signature="e#38212#38717#0" />
+                <element signature="e#34313#34529#0" />
+                <element signature="e#34550#34718#0" />
+                <element signature="e#38724#39360#0" />
+                <element signature="e#34912#35170#0" />
+                <element signature="e#35191#35361#0" />
+                <element signature="e#39366#39882#0" />
+                <element signature="e#35475#35697#0" />
+                <element signature="e#35718#35883#0" />
+                <element signature="e#39888#40437#0" />
+                <element signature="e#36009#36233#0" />
+                <element signature="e#36254#36438#0" />
+                <element signature="e#40444#41056#0" />
+                <element signature="e#36626#36868#0" />
+                <element signature="e#36889#37057#0" />
+                <element signature="e#41062#41649#0" />
+                <element signature="e#37211#37441#0" />
+                <element signature="e#37462#37650#0" />
+                <element signature="e#41655#42211#0" />
+                <element signature="e#37797#38014#0" />
+                <element signature="e#38035#38213#0" />
+                <element signature="e#42218#42686#0" />
+                <element signature="e#38321#38536#0" />
+                <element signature="e#38557#38689#0" />
+                <element signature="e#42692#43035#0" />
+                <element signature="e#43041#43445#0" />
+                <element signature="e#43452#43710#0" />
+                <element signature="e#43716#44185#0" />
+                <element signature="e#39886#40051#0" />
+                <element signature="e#40072#40188#0" />
+                <element signature="e#44191#44689#0" />
+                <element signature="e#40320#40566#0" />
+                <element signature="e#40480#40556#1" />
+                <element signature="e#40587#40691#0" />
+                <element signature="e#44695#44974#0" />
+                <element signature="e#44980#45449#0" />
+                <element signature="e#45455#45619#0" />
+                <element signature="e#45625#45925#0" />
+                <element signature="e#45931#46198#0" />
+                <element signature="e#46204#46401#0" />
+                <element signature="e#46408#46631#0" />
+                <element signature="e#46637#46859#0" />
+                <element signature="e#46865#47346#0" />
+                <element signature="e#47353#47633#0" />
+                <element signature="e#47640#48193#0" />
+                <element signature="e#48199#48472#0" />
+                <element signature="e#48479#48724#0" />
+                <element signature="e#48731#49010#0" />
+                <element signature="e#49016#49276#0" />
+                <element signature="e#49282#49633#0" />
+                <element signature="e#49639#50227#0" />
+                <element signature="e#45792#46021#0" />
+                <element signature="e#46042#46230#0" />
+                <element signature="e#50234#50815#0" />
+                <element signature="e#46384#46603#0" />
+                <element signature="e#46624#46818#0" />
+                <element signature="e#46827#47701#0" />
+                <element signature="e#47708#47721#0" />
+                <element signature="e#47724#48642#0" />
+                <element signature="e#52643#53189#0" />
+                <element signature="e#48764#48993#0" />
+                <element signature="e#49014#49192#0" />
+                <element signature="e#53197#53760#0" />
+                <element signature="e#49329#49554#0" />
+                <element signature="e#49575#49761#0" />
+                <element signature="e#53767#54330#0" />
+                <element signature="e#49921#50151#0" />
+                <element signature="e#50172#50332#0" />
+                <element signature="e#54336#54916#0" />
+                <element signature="e#50494#50726#0" />
+                <element signature="e#50747#50917#0" />
+                <element signature="e#54926#55584#0" />
+                <element signature="e#51178#51398#0" />
+                <element signature="e#51419#51587#0" />
+                <element signature="e#55591#56124#0" />
+                <element signature="e#51735#51937#0" />
+                <element signature="e#51958#52126#0" />
+                <element signature="e#56130#56691#0" />
+                <element signature="e#52281#52488#0" />
+                <element signature="e#52509#52693#0" />
+                <element signature="e#56697#57303#0" />
+                <element signature="e#52874#53091#0" />
+                <element signature="e#53112#53304#0" />
+                <element signature="e#57310#57827#0" />
+                <element signature="e#53465#53664#0" />
+                <element signature="e#53685#53830#0" />
+                <element signature="e#57833#58344#0" />
+                <element signature="e#53982#54179#0" />
+                <element signature="e#54200#54345#0" />
+                <element signature="e#58350#58922#0" />
+                <element signature="e#54485#54744#0" />
+                <element signature="e#54765#54925#0" />
+                <element signature="e#58928#59705#0" />
+                <element signature="e#55096#55523#0" />
+                <element signature="e#55191#55310#1" />
+                <element signature="e#55552#55707#0" />
+                <element signature="e#59711#60503#0" />
+                <element signature="e#55886#56323#0" />
+                <element signature="e#55993#56110#1" />
+                <element signature="e#56352#56505#0" />
+                <element signature="e#60509#60809#0" />
+                <element signature="e#60816#61176#0" />
+                <element signature="e#61183#61545#0" />
+                <element signature="e#61552#61980#0" />
+                <element signature="e#61986#62412#0" />
+                <element signature="e#62418#62733#0" />
+                <element signature="e#62739#63059#0" />
+                <element signature="e#63065#63443#0" />
+                <element signature="e#63449#63690#0" />
+                <element signature="e#63696#64171#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/Assert.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="e#1238#1239#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/actionsPerformed/SMPConsolePageActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="36" column="68" selection-start-line="35" selection-start-column="8" selection-end-line="36" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/actionsPerformed/SMPPartitionPageActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="120" selection-start-line="120" selection-end-line="120" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,28 +375,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/helpers/SMPDataStructure.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.6.0/selenium-support-3.6.0.jar!/org/openqa/selenium/support/pagefactory/internal/LocatingElementHandler.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+            <state relative-caret-position="238">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/model/CucumberFeature.class">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/SMPOfferNotificationPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="184" column="16" selection-start-line="184" selection-start-column="16" selection-end-line="184" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Timeout.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="424">
+              <caret line="33" column="50" selection-start-line="32" selection-start-column="4" selection-end-line="33" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -146,7 +404,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ViewMo</find>
       <find>Credit</find>
       <find>Grant Full Acc</find>
       <find>click on Add under</find>
@@ -176,6 +433,7 @@
       <find>click on Add</find>
       <find>check if</find>
       <find>RET100MINSONEOFF</find>
+      <find>cons</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\subbaiv1\regression2\Features\JanuaryRelease2018\Regression</dir>
@@ -242,8 +500,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Addruleparameter" />
-        <option value="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Addwebrequests" />
         <option value="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Credit_Partition" />
         <option value="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Customer_Add_Offer.feature" />
         <option value="$PROJECT_DIR$/Features/Pay and Go SMP/SMP_Customer_Service_Remove_offer" />
@@ -288,11 +544,13 @@
         <option value="$PROJECT_DIR$/Features/Pay and Go SMP/Add new offer text.feature" />
         <option value="$PROJECT_DIR$/src/test/java/helpers/BrowserHelper.java" />
         <option value="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_OFFER_TEXT_REAL_v1.feature" />
-        <option value="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_SERVICE_GROUP_LIST_Partition_v1.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/helpers/SMPDataStructure.java" />
         <option value="$PROJECT_DIR$/src/test/java/helpers/MSExcel.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/SMP_Scenarios.java" />
         <option value="$PROJECT_DIR$/src/test/java/actionsPerformed/SMPOfferNotificationPageActions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/helpers/SMPDataStructure.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageobjects/SMPPartitionsPage.java" />
+        <option value="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_SERVICE_GROUP_LIST_Partition_v1.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/SMP_Scenarios.java" />
+        <option value="$PROJECT_DIR$/src/test/java/actionsPerformed/SMPPartitionPageActions.java" />
       </list>
     </option>
   </component>
@@ -427,11 +685,11 @@
       <recent name="helpers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Automation\SMP\Features\Pay and Go SMP\referenceData\defunct" />
       <recent name="C:\Automation\SMP\Features\Pay and Go SMP\referenceData" />
       <recent name="C:\Users\ssankar4\Documents\PROJECTS\AUTOMATION\PAYG\regression\src\test" />
       <recent name="C:\Users\ssankar4\Documents\PROJECTS\AUTOMATION\PAYG\regression\src\test\Base" />
       <recent name="C:\Users\ssankar4\Documents\PROJECTS\AUTOMATION\PAYG\regression\Features\Base" />
-      <recent name="C:\Users\ssankar4\Documents\PROJECTS\AUTOMATION\PAYG\regression\.idea\libraries" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -446,27 +704,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: SMP_OFFER_TEXT_REAL_v1">
+  <component name="RunManager" selected="Cucumber java.Feature: SMP_SERVICE_GROUP_LIST_Partition_v1">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: Add new offer text" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/Pay and Go SMP/Add new offer text.feature" />
-      <option name="GLUE" value="steps" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="PayG Automation" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Add new offer text" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -507,6 +747,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Feature: SMP_SERVICE_GROUP_LIST_Partition_v1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_SERVICE_GROUP_LIST_Partition_v1.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="PayG Automation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: SMP_SERVICE_GROUP_LIST_Partition_v1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: This scenario ensures that SMP user is able to add new offer text in console as part of PAYG H1 2018 (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_OFFER_TEXT_REAL_v1.feature" />
@@ -526,15 +784,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: This scenario ensures that SMP user is able to add new offer text in console as part of PAYG H1 2018" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: This test scenario ensures that SMP user is able to add new partition" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/Pay and Go SMP/Add new offer text.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_SERVICE_GROUP_LIST_Partition_v1.feature" />
       <option name="GLUE" value="steps" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="PayG Automation" />
-      <option name="NAME_FILTER" value="^This scenario ensures that SMP user is able to add new offer text in console as part of PAYG H1 2018$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^This scenario ensures that SMP user is able to add new offer text in console as part of PAYG H1 2018$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: This scenario ensures that SMP user is able to add new offer text in console as part of PAYG H1 2018" />
+      <option name="NAME_FILTER" value="^This test scenario ensures that SMP user is able to add new partition$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^This test scenario ensures that SMP user is able to add new partition$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: This test scenario ensures that SMP user is able to add new partition" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -555,19 +813,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Feature: Add new offer text" />
-      <item itemvalue="Cucumber java.Scenario: This scenario ensures that SMP user is able to add new offer text in console as part of PAYG H1 2018" />
       <item itemvalue="Cucumber java.Feature: SMP_OFFER_TEXT_REAL_v1" />
       <item itemvalue="Cucumber java.Feature: SMP_Modify Offer Notification" />
       <item itemvalue="Cucumber java.Scenario: This scenario ensures that SMP user is able to add new offer text in console as part of PAYG H1 2018 (1)" />
+      <item itemvalue="Cucumber java.Feature: SMP_SERVICE_GROUP_LIST_Partition_v1" />
+      <item itemvalue="Cucumber java.Scenario: This test scenario ensures that SMP user is able to add new partition" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.Feature: SMP_SERVICE_GROUP_LIST_Partition_v1" />
+        <item itemvalue="Cucumber java.Scenario: This test scenario ensures that SMP user is able to add new partition" />
         <item itemvalue="Cucumber java.Feature: SMP_OFFER_TEXT_REAL_v1" />
         <item itemvalue="Cucumber java.Scenario: This scenario ensures that SMP user is able to add new offer text in console as part of PAYG H1 2018 (1)" />
         <item itemvalue="Cucumber java.Feature: SMP_Modify Offer Notification" />
-        <item itemvalue="Cucumber java.Feature: Add new offer text" />
-        <item itemvalue="Cucumber java.Scenario: This scenario ensures that SMP user is able to add new offer text in console as part of PAYG H1 2018" />
       </list>
     </recent_temporary>
   </component>
@@ -930,35 +1188,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__SMP_OFFER_TEXT_REAL_v1 - 2019.07.29 at 12h 15m 32s.xml">
-      <configuration name="Feature: SMP_OFFER_TEXT_REAL_v1" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__SMP_SERVICE_GROUP_LIST_Partition_v1 - 2019.07.30 at 13h 29m 43s.xml">
+      <configuration name="Feature: SMP_SERVICE_GROUP_LIST_Partition_v1" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__SMP_OFFER_TEXT_REAL_v1 - 2019.07.29 at 12h 18m 20s.xml">
-      <configuration name="Feature: SMP_OFFER_TEXT_REAL_v1" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__SMP_SERVICE_GROUP_LIST_Partition_v1 - 2019.07.30 at 13h 30m 56s.xml">
+      <configuration name="Feature: SMP_SERVICE_GROUP_LIST_Partition_v1" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__SMP_OFFER_TEXT_REAL_v1 - 2019.07.29 at 12h 36m 46s.xml">
-      <configuration name="Feature: SMP_OFFER_TEXT_REAL_v1" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__This_test_scenario_ensures_that_SMP_user_is_able_to_add_new_partition - 2019.07.30 at 13h 54m 37s.xml">
+      <configuration name="Scenario: This test scenario ensures that SMP user is able to add new partition" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__SMP_Modify_Offer_Notification - 2019.07.29 at 12h 47m 27s.xml">
-      <configuration name="Feature: SMP_Modify Offer Notification" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__SMP_SERVICE_GROUP_LIST_Partition_v1 - 2019.07.30 at 14h 18m 42s.xml">
+      <configuration name="Feature: SMP_SERVICE_GROUP_LIST_Partition_v1" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__SMP_OFFER_TEXT_REAL_v1 - 2019.07.29 at 13h 01m 48s.xml">
-      <configuration name="Feature: SMP_OFFER_TEXT_REAL_v1" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__SMP_SERVICE_GROUP_LIST_Partition_v1 - 2019.07.30 at 14h 42m 08s.xml">
+      <configuration name="Feature: SMP_SERVICE_GROUP_LIST_Partition_v1" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__This_scenario_ensures_that_SMP_user_is_able_to_add_new_offer_text_in_console_as_part_of_PAYG_H1_2018_(1) - 2019.07.29 at 14h 09m 29s.xml">
-      <configuration name="Scenario: This scenario ensures that SMP user is able to add new offer text in console as part of PAYG H1 2018 (1)" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__SMP_SERVICE_GROUP_LIST_Partition_v1 - 2019.07.30 at 14h 42m 35s.xml">
+      <configuration name="Feature: SMP_SERVICE_GROUP_LIST_Partition_v1" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__SMP_OFFER_TEXT_REAL_v1 - 2019.07.29 at 14h 32m 59s.xml">
-      <configuration name="Feature: SMP_OFFER_TEXT_REAL_v1" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__SMP_SERVICE_GROUP_LIST_Partition_v1 - 2019.07.30 at 14h 45m 48s.xml">
+      <configuration name="Feature: SMP_SERVICE_GROUP_LIST_Partition_v1" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__SMP_OFFER_TEXT_REAL_v1 - 2019.07.29 at 14h 37m 47s.xml">
-      <configuration name="Feature: SMP_OFFER_TEXT_REAL_v1" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__This_test_scenario_ensures_that_SMP_user_is_able_to_add_new_partition - 2019.07.30 at 14h 52m 16s.xml">
+      <configuration name="Scenario: This test scenario ensures that SMP user is able to add new partition" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__SMP_OFFER_TEXT_REAL_v1 - 2019.07.29 at 14h 41m 00s.xml">
-      <configuration name="Feature: SMP_OFFER_TEXT_REAL_v1" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__SMP_SERVICE_GROUP_LIST_Partition_v1 - 2019.07.30 at 14h 59m 02s.xml">
+      <configuration name="Feature: SMP_SERVICE_GROUP_LIST_Partition_v1" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__SMP_OFFER_TEXT_REAL_v1 - 2019.07.29 at 14h 42m 33s.xml">
-      <configuration name="Feature: SMP_OFFER_TEXT_REAL_v1" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__This_test_scenario_ensures_that_SMP_user_is_able_to_add_new_partition - 2019.07.30 at 15h 01m 34s.xml">
+      <configuration name="Scenario: This test scenario ensures that SMP user is able to add new partition" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="2">
@@ -972,9 +1230,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="501" y="57" width="364" height="613" id="Project" order="0" visible="true" weight="0.295764" />
+      <window_info content_ui="combo" x="501" y="57" width="364" height="613" id="Project" order="0" visible="true" weight="0.295764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24876848" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -985,8 +1242,8 @@
       <window_info id="Image Layers" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49367756" weight="0.32569557" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7329803" visible="true" weight="0.43535188" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6859444" weight="0.32569557" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7329803" weight="0.43535188" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.6859444" visible="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.7019667" weight="0.33937398" />
@@ -1018,13 +1275,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49367756" weight="0.32569557" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7329803" weight="0.43535188" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6859444" visible="true" weight="0.32569557" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.6859444" visible="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.7019667" weight="0.33937398" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.26701966" side_tool="true" weight="0.43556282" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.6573939" weight="0.29787233" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.7299546" weight="0.3115824" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.7299546" weight="0.31096563" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.6961933" weight="0.22204724" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
@@ -1135,7 +1392,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/steps/SMP_Scenarios.java</url>
-          <line>408</line>
+          <line>427</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
@@ -1145,11 +1402,30 @@
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/steps/SMP_Scenarios.java</url>
+          <line>480</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/actionsPerformed/SMPPartitionPageActions.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/actionsPerformed/SMPPartitionPageActions.java</url>
+          <line>120</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CucumberJavaRunConfigurationType">
         <watch expression="currentRow" />
+        <watch expression="allPartitions.get(i).getText()" />
       </configuration>
     </watches-manager>
   </component>
@@ -1160,92 +1436,53 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>weOffer.get(l).getText().equalsIgnoreCase(notification)</expression-string>
+        <expression-string>driver.findElement(By.xpath(&quot;/html/body/form[1]/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr[&quot;+i+&quot;]/td[2]/div/input&quot;))</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>msExcel.readCell(i, j)</expression-string>
+        <expression-string>allPartitions.get(i).getText()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.readCell(20, 0).get(&quot;value&quot;)</expression-string>
+        <expression-string>driver.findElements(By.xpath(&quot;/html/body/form[1]/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr/td[3]&quot;)).get(0).getText()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.readCell(0, 0).get(&quot;value&quot;)</expression-string>
+        <expression-string>driver.findElements(By.xpath(&quot;/html/body/form[1]/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr/td[3]&quot;))</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.getLastCol(i)</expression-string>
+        <expression-string>List&lt;WebElement&gt; allPartitions = driver.findElements(By.xpath(&quot;/html/body/form[1]/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr/td[3]&quot;))</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.readCell(0, j).get(&quot;value&quot;)</expression-string>
+        <expression-string>allPartitions.get(0)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>this.readCell(i, j).get(&quot;value&quot;)</expression-string>
+        <expression-string>allPartitions.get(6).getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>allPartitions.get(5).getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>allPartitions.get(3).getText()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/SMP_CustomerServiceServiceRemoveobjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/SMP_CustomerService_Credit_Purchased_partition.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Delete a service">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/SMP_JSecureAdmin_CareBundles.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="100" selection-start-line="16" selection-start-column="100" selection-end-line="16" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/SMP_JSeucreAdmin_CareGeneral.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/SMP_jSecureAdmin_SMPadminview.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/SMP_jSecureAdmin_SMPadminModify.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/SMP_jSecureAdmin_SMPadminDelete.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1319,13 +1556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/actionsPerformed/SMPConsolePageActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/CreditRealMoney.feature">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1343,23 +1573,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Add_Partition">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Delete_Partitions">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.11-beta3/poi-3.11-beta3.jar!/org/apache/poi/ss/usermodel/Cell.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_SERVICE_GROUP_LIST_Partition_v1.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1376,18 +1593,6 @@
           <caret line="734" selection-start-line="734" selection-end-line="734" />
           <folding>
             <element signature="e#28800#28801#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/MSExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="89" column="51" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1345#1361#0" expanded="true" />
-            <element signature="e#2833#2849#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1459,51 +1664,396 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/SMPDataStructure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="101" column="35" selection-start-line="101" selection-start-column="35" selection-end-line="101" selection-end-column="35" />
+          <folding>
+            <element signature="method#decode#0;class#SMPDataStructure#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/PaygOffer.feature">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/SMPDataStructure.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/MSExcel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/Add new offer text_Orignal.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/SMP_Scenarios.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="495" column="51" selection-start-line="495" selection-start-column="51" selection-end-line="495" selection-end-column="51" />
+        <state relative-caret-position="17">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/actionsPerformed/SMPOfferNotificationPageActions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/SMPConsolePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="45" column="55" lean-forward="true" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+        <state relative-caret-position="260">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Modify Offer Notification.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/actionsPerformed/SMPOfferNotificationPageActions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        <state relative-caret-position="362">
+          <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_OFFER_TEXT_REAL_v1.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/SMPPartitionsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageobjects/SMPOfferNotificationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="33" column="50" selection-start-line="32" selection-start-column="4" selection-end-line="33" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/defunct/SMP_Add_Partition">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="10" selection-start-column="4" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/defunct/SMP_Modify_Partition">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#1238#1239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/actionsPerformed/SMPConsolePageActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="36" column="68" selection-start-line="35" selection-start-column="8" selection-end-line="36" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Delete_Partitions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/defunct/Add new offer text_Orignal.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/SMP_Scenarios.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="312" column="46" selection-start-line="312" selection-start-column="46" selection-end-line="312" selection-end-column="46" />
+          <folding>
+            <element signature="e#1608#1710#0" />
+            <element signature="e#1716#1795#0" />
+            <element signature="e#1800#1860#0" />
+            <element signature="e#1716#2469#0" />
+            <element signature="e#1995#2289#0" />
+            <element signature="e#2310#2462#0" />
+            <element signature="e#2475#3283#0" />
+            <element signature="e#2621#3004#0" />
+            <element signature="e#3025#3277#0" />
+            <element signature="e#3289#3864#0" />
+            <element signature="e#3397#3691#0" />
+            <element signature="e#3712#3858#0" />
+            <element signature="e#4340#4815#0" />
+            <element signature="e#4426#4642#0" />
+            <element signature="e#4663#4809#0" />
+            <element signature="e#4821#5296#0" />
+            <element signature="e#4899#5151#0" />
+            <element signature="e#5172#5290#0" />
+            <element signature="e#5303#5849#0" />
+            <element signature="e#5436#5687#0" />
+            <element signature="e#5708#5842#0" />
+            <element signature="e#5855#6551#0" />
+            <element signature="e#6101#6392#0" />
+            <element signature="e#6413#6545#0" />
+            <element signature="e#6557#7172#0" />
+            <element signature="e#6723#7024#0" />
+            <element signature="e#7045#7165#0" />
+            <element signature="e#7178#7762#0" />
+            <element signature="e#7362#7626#0" />
+            <element signature="e#7647#7755#0" />
+            <element signature="e#7768#8349#0" />
+            <element signature="e#7954#8213#0" />
+            <element signature="e#8234#8342#0" />
+            <element signature="e#8355#8852#0" />
+            <element signature="e#8437#8689#0" />
+            <element signature="e#8710#8846#0" />
+            <element signature="e#10670#10790#0" />
+            <element signature="e#11279#11387#0" />
+            <element signature="e#11876#11984#0" />
+            <element signature="e#11400#12240#0" />
+            <element signature="e#11716#12113#0" />
+            <element signature="e#12134#12234#0" />
+            <element signature="e#12247#12854#0" />
+            <element signature="e#12497#12721#0" />
+            <element signature="e#12742#12848#0" />
+            <element signature="e#12861#13412#0" />
+            <element signature="e#13066#13278#0" />
+            <element signature="e#13299#13405#0" />
+            <element signature="e#13419#14009#0" />
+            <element signature="e#13623#13877#0" />
+            <element signature="e#13898#14002#0" />
+            <element signature="e#14669#14848#1" />
+            <element signature="e#14831#14877#1" />
+            <element signature="e#15219#15284#1" />
+            <element signature="e#15423#15488#1" />
+            <element signature="e#14759#14787#0" />
+            <element signature="e#15758#15869#0" />
+            <element signature="e#15898#15958#0" />
+            <element signature="e#16579#16678#0" />
+            <element signature="e#16707#16759#0" />
+            <element signature="e#18178#18277#0" />
+            <element signature="e#18306#18358#0" />
+            <element signature="e#19769#19818#0" />
+            <element signature="e#20424#20481#0" />
+            <element signature="e#21311#21368#0" />
+            <element signature="e#19833#20241#0" />
+            <element signature="e#20247#20613#0" />
+            <element signature="e#20619#20981#0" />
+            <element signature="e#18468#18732#0" />
+            <element signature="e#18753#18925#0" />
+            <element signature="e#21995#22933#0" />
+            <element signature="e#19417#19681#0" />
+            <element signature="e#19702#19871#0" />
+            <element signature="e#22939#23854#0" />
+            <element signature="e#20360#20624#0" />
+            <element signature="e#20645#20792#0" />
+            <element signature="e#23861#24735#0" />
+            <element signature="e#21192#21456#0" />
+            <element signature="e#21477#21672#0" />
+            <element signature="e#24741#25355#0" />
+            <element signature="e#21850#22114#0" />
+            <element signature="e#22135#22293#0" />
+            <element signature="e#25361#26004#0" />
+            <element signature="e#22475#22763#0" />
+            <element signature="e#22784#22942#0" />
+            <element signature="e#26010#27259#0" />
+            <element signature="e#23168#24015#0" />
+            <element signature="e#23380#23476#1" />
+            <element signature="e#23524#23618#1" />
+            <element signature="e#23668#23758#1" />
+            <element signature="e#23809#23900#1" />
+            <element signature="e#24036#24196#0" />
+            <element signature="e#27265#27807#0" />
+            <element signature="e#24346#24546#0" />
+            <element signature="e#24567#24745#0" />
+            <element signature="e#27813#28337#0" />
+            <element signature="e#24877#25079#0" />
+            <element signature="e#25100#25274#0" />
+            <element signature="e#28343#28866#0" />
+            <element signature="e#25411#25608#0" />
+            <element signature="e#25629#25803#0" />
+            <element signature="e#28873#29536#0" />
+            <element signature="e#26065#26285#0" />
+            <element signature="e#26306#26474#0" />
+            <element signature="e#29542#30170#0" />
+            <element signature="e#26702#26921#0" />
+            <element signature="e#26942#27108#0" />
+            <element signature="e#30179#30765#0" />
+            <element signature="e#27265#27494#0" />
+            <element signature="e#27515#27703#0" />
+            <element signature="e#27714#28588#0" />
+            <element signature="e#27660#27673#0" />
+            <element signature="e#31651#32266#0" />
+            <element signature="e#27830#28072#0" />
+            <element signature="e#28093#28267#0" />
+            <element signature="e#28279#29197#0" />
+            <element signature="e#33195#33736#0" />
+            <element signature="e#29319#29546#0" />
+            <element signature="e#29567#29739#0" />
+            <element signature="e#33745#34352#0" />
+            <element signature="e#29911#30148#0" />
+            <element signature="e#30169#30355#0" />
+            <element signature="e#34363#34935#0" />
+            <element signature="e#30519#30751#0" />
+            <element signature="e#30772#30936#0" />
+            <element signature="e#34941#35604#0" />
+            <element signature="e#31121#31408#0" />
+            <element signature="e#31429#31607#0" />
+            <element signature="e#35610#36210#0" />
+            <element signature="e#31722#32014#0" />
+            <element signature="e#32035#32213#0" />
+            <element signature="e#36217#36877#0" />
+            <element signature="e#32411#32667#0" />
+            <element signature="e#32688#32878#0" />
+            <element signature="e#36884#37567#0" />
+            <element signature="e#33051#33343#0" />
+            <element signature="e#33364#33568#0" />
+            <element signature="e#37574#38205#0" />
+            <element signature="e#33769#34017#0" />
+            <element signature="e#34038#34206#0" />
+            <element signature="e#38212#38717#0" />
+            <element signature="e#34313#34529#0" />
+            <element signature="e#34550#34718#0" />
+            <element signature="e#38724#39360#0" />
+            <element signature="e#34912#35170#0" />
+            <element signature="e#35191#35361#0" />
+            <element signature="e#39366#39882#0" />
+            <element signature="e#35475#35697#0" />
+            <element signature="e#35718#35883#0" />
+            <element signature="e#39888#40437#0" />
+            <element signature="e#36009#36233#0" />
+            <element signature="e#36254#36438#0" />
+            <element signature="e#40444#41056#0" />
+            <element signature="e#36626#36868#0" />
+            <element signature="e#36889#37057#0" />
+            <element signature="e#41062#41649#0" />
+            <element signature="e#37211#37441#0" />
+            <element signature="e#37462#37650#0" />
+            <element signature="e#41655#42211#0" />
+            <element signature="e#37797#38014#0" />
+            <element signature="e#38035#38213#0" />
+            <element signature="e#42218#42686#0" />
+            <element signature="e#38321#38536#0" />
+            <element signature="e#38557#38689#0" />
+            <element signature="e#42692#43035#0" />
+            <element signature="e#43041#43445#0" />
+            <element signature="e#43452#43710#0" />
+            <element signature="e#43716#44185#0" />
+            <element signature="e#39886#40051#0" />
+            <element signature="e#40072#40188#0" />
+            <element signature="e#44191#44689#0" />
+            <element signature="e#40320#40566#0" />
+            <element signature="e#40480#40556#1" />
+            <element signature="e#40587#40691#0" />
+            <element signature="e#44695#44974#0" />
+            <element signature="e#44980#45449#0" />
+            <element signature="e#45455#45619#0" />
+            <element signature="e#45625#45925#0" />
+            <element signature="e#45931#46198#0" />
+            <element signature="e#46204#46401#0" />
+            <element signature="e#46408#46631#0" />
+            <element signature="e#46637#46859#0" />
+            <element signature="e#46865#47346#0" />
+            <element signature="e#47353#47633#0" />
+            <element signature="e#47640#48193#0" />
+            <element signature="e#48199#48472#0" />
+            <element signature="e#48479#48724#0" />
+            <element signature="e#48731#49010#0" />
+            <element signature="e#49016#49276#0" />
+            <element signature="e#49282#49633#0" />
+            <element signature="e#49639#50227#0" />
+            <element signature="e#45792#46021#0" />
+            <element signature="e#46042#46230#0" />
+            <element signature="e#50234#50815#0" />
+            <element signature="e#46384#46603#0" />
+            <element signature="e#46624#46818#0" />
+            <element signature="e#46827#47701#0" />
+            <element signature="e#47708#47721#0" />
+            <element signature="e#47724#48642#0" />
+            <element signature="e#52643#53189#0" />
+            <element signature="e#48764#48993#0" />
+            <element signature="e#49014#49192#0" />
+            <element signature="e#53197#53760#0" />
+            <element signature="e#49329#49554#0" />
+            <element signature="e#49575#49761#0" />
+            <element signature="e#53767#54330#0" />
+            <element signature="e#49921#50151#0" />
+            <element signature="e#50172#50332#0" />
+            <element signature="e#54336#54916#0" />
+            <element signature="e#50494#50726#0" />
+            <element signature="e#50747#50917#0" />
+            <element signature="e#54926#55584#0" />
+            <element signature="e#51178#51398#0" />
+            <element signature="e#51419#51587#0" />
+            <element signature="e#55591#56124#0" />
+            <element signature="e#51735#51937#0" />
+            <element signature="e#51958#52126#0" />
+            <element signature="e#56130#56691#0" />
+            <element signature="e#52281#52488#0" />
+            <element signature="e#52509#52693#0" />
+            <element signature="e#56697#57303#0" />
+            <element signature="e#52874#53091#0" />
+            <element signature="e#53112#53304#0" />
+            <element signature="e#57310#57827#0" />
+            <element signature="e#53465#53664#0" />
+            <element signature="e#53685#53830#0" />
+            <element signature="e#57833#58344#0" />
+            <element signature="e#53982#54179#0" />
+            <element signature="e#54200#54345#0" />
+            <element signature="e#58350#58922#0" />
+            <element signature="e#54485#54744#0" />
+            <element signature="e#54765#54925#0" />
+            <element signature="e#58928#59705#0" />
+            <element signature="e#55096#55523#0" />
+            <element signature="e#55191#55310#1" />
+            <element signature="e#55552#55707#0" />
+            <element signature="e#59711#60503#0" />
+            <element signature="e#55886#56323#0" />
+            <element signature="e#55993#56110#1" />
+            <element signature="e#56352#56505#0" />
+            <element signature="e#60509#60809#0" />
+            <element signature="e#60816#61176#0" />
+            <element signature="e#61183#61545#0" />
+            <element signature="e#61552#61980#0" />
+            <element signature="e#61986#62412#0" />
+            <element signature="e#62418#62733#0" />
+            <element signature="e#62739#63059#0" />
+            <element signature="e#63065#63443#0" />
+            <element signature="e#63449#63690#0" />
+            <element signature="e#63696#64171#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_Modify Offer Notification.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.6.0/selenium-support-3.6.0.jar!/org/openqa/selenium/support/pagefactory/internal/LocatingElementHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Features/Pay and Go SMP/referenceData/SMP_SERVICE_GROUP_LIST_Partition_v1.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/actionsPerformed/SMPPartitionPageActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -304,6 +304,22 @@ public class SMP_Scenarios {
 
     }
 
+    @And("^click Delete against partition id([^\"]*) and Delete$")
+    public void click_on_delete_checkbox_against_partition_id(String serviceGroupId) throws InterruptedException, IOException {
+
+        try {
+            driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+            // PageFactory.initElements(driver, SMPAdminPage.class);
+            SMPPartitionPageActions.Delete_partition(serviceGroupId);
+            Screenshots.captureScreenshot();
+        } catch (Exception e) {
+
+            log.debug("Delete not a success");
+            Assert.fail("Delete not a success");
+        }
+
+    }
+
     @And("^click on Bundle Configurations add bundle ([^\"]*) ([^\"]*) ([^\"]*) ([^\"]*) ([^\"]*) ([^\"]*)$")
     public void click_on_bundle_configurations(String bundlename, String description, String service1, String service2, String service3, String service4) throws InterruptedException, IOException {
 
@@ -380,8 +396,8 @@ public class SMP_Scenarios {
         click_on_SMP_Administration_link();
         int numColumns = msExcel.getLastCol(1);
         String cellFontColor, cellBGColor;
+        //Reading Spreadsheet row by row
         for (int i=1;numColumns>0;i++) {
-            System.out.print("\n::"+i+"::");
             actionToPerform="";
             numColumns = msExcel.getLastCol(i); // numbers of column in the currentRow
             for (int j = 0;j<numColumns; j++) {
@@ -400,22 +416,40 @@ public class SMP_Scenarios {
                     actionToPerform="delete";
                 }
             }
-            System.out.print(sheetRow);
+            if(sheetRow.size()>0)
+            System.out.print("\n::"+i+"::"+sheetRow);
             // Actions for the first row
             //Click
             try {
-                if(actionToPerform.equalsIgnoreCase("addNew")) {
-                    System.out.println("\nInsert new data ...");
-                    addOfferText(sheetRow.get("SPID"), smpDataStructure.decode(sheetRow.get("OFFER"), "OFFERS REAL", "OFFER", "NAME"), "Subscribe With Chg", sheetRow.get("SMS_MESSAGE"));
-                }
-                if(actionToPerform.equalsIgnoreCase("delete")) {
-                    System.out.println("\ndeleting data ...");
-
-                }
-                if(actionToPerform.equalsIgnoreCase("modify")) {
-                    System.out.println("\nModify existing data ...");
-                    modifyOfferText(sheetRow.get("SPID"), smpDataStructure.decode(sheetRow.get("OFFER"), "OFFERS REAL", "OFFER", "NAME"),  "Balance Enquiry", sheetRow.get("SMS_MESSAGE"),sheetRow.get("WEB_MESSAGE")); //WebMessage
-
+                switch (tabName.toUpperCase()) {
+                    case "OFFER TEXT REAL":
+                        if (actionToPerform.equalsIgnoreCase("addNew")) {
+                            System.out.println("\nAdding Offer TEXT REAL data ...");
+                            addOfferText(sheetRow.get("SPID"), smpDataStructure.decode(sheetRow.get("OFFER"), "OFFERS REAL", "OFFER", "NAME"), smpDataStructure.notificationType.get(sheetRow.get("NOTIFICATION_ID")), sheetRow.get("SMS_MESSAGE"));
+                        }
+                        if (actionToPerform.equalsIgnoreCase("delete")) {
+                            System.out.println("\ndeleting Offer TEXT REAL data ... to be implemented");
+                        }
+                        if (actionToPerform.equalsIgnoreCase("modify")) {
+                            System.out.println("\nModifying Offer TEXT REAL data ...");
+                            modifyOfferText(sheetRow.get("SPID"), smpDataStructure.decode(sheetRow.get("OFFER"), "OFFERS REAL", "OFFER", "NAME"), smpDataStructure.notificationType.get(sheetRow.get("NOTIFICATION_ID")), sheetRow.get("SMS_MESSAGE"), sheetRow.get("WEB_MESSAGE")); //WebMessage
+                        }
+                        break;
+                    case "SERVICEGROUPLIST":{
+                        if (actionToPerform.equalsIgnoreCase("addNew")) {
+                            System.out.println("\nAdding Service Partation data ...");
+                            addServicePartition(sheetRow.get("SERVICEGROUPID"),sheetRow.get("NAME"), sheetRow.get("LOW_BALANCE"),sheetRow.get("MAX_BALANCE"), sheetRow.get("MAX_BONUS_BALANCE"), sheetRow.get("DESCRIPTION"));
+                        }
+                        if (actionToPerform.equalsIgnoreCase("delete")) {
+                            System.out.println("\nDeleting Service Partation data ...");
+                            deleteServicePartition(sheetRow.get("SERVICEGROUPID"));
+                        }
+                        if (actionToPerform.equalsIgnoreCase("modify")) {
+                            System.out.println("\nModify Service Partation data ...");
+                            modifyServicePartition(sheetRow.get("SERVICEGROUPID"), sheetRow.get("LOW_BALANCE"),sheetRow.get("MAX_BALANCE"), sheetRow.get("MAX_BONUS_BALANCE"), sheetRow.get("DESCRIPTION"));
+                        }
+                        break;
+                    }
                 }
                 sheetRow.clear(); // Clearing the sheet
             }catch(Exception ex){
@@ -427,29 +461,28 @@ public class SMP_Scenarios {
         }
 
     }
-//
-    public void addOfferText(String spid, String offerName,  String notificationId, String sms){
+// Offer Text
+    public void addOfferText(String spid, String offerName,  String notification, String sms){
         try {
+            System.out.println("Adding... Offer ["+offerName+"] notification ["+notification+"] sms["+sms+"]");
             click_on_Service_Providers_link(spid);
             click_on_Notifications_link();
             click_on_Offers_tab_and_Create_new_link();
-            fill_in_details_and_click_add(offerName, notificationId, sms); //notificationId not coming from Spreadsheet, Offer Text is derived from Offers REAL Tab
+            fill_in_details_and_click_add(offerName, notification, sms); //notification not coming from Spreadsheet, Offer Text is derived from Offers REAL Tab
             click_on_Home_link();
-            //click_on_Console_link();
             Thread.sleep(1000);
-            //e.writeCell(i, 14,"SUCCESS");
         }catch(Exception ex){
             System.out.println(ex.toString());
-            //e.writeCell(i, 14,"FAIL");
         } catch (Throwable throwable) {
             throwable.printStackTrace();
         }
     }
-    public void modifyOfferText(String spid, String offerName, String notificationId, String sms, String webMsg){
+    public void modifyOfferText(String spid, String offerName, String notification, String sms, String webMsg){
         try {
+            System.out.println("Modifying... Offer ["+offerName+"] notification ["+notification+"] sms["+sms+"]");
             click_on_Service_Providers_link(spid);
             click_on_Notifications_link();
-            click_on_offers_tab_click_on_modify_link(notificationId,offerName);
+            click_on_offers_tab_click_on_modify_link(notification,offerName);
             modify_smsmessage_webmessage(sms,webMsg);
             //check_if_notifications_home_page();
             click_on_Home_link();
@@ -459,6 +492,33 @@ public class SMP_Scenarios {
             System.out.println(ex.toString());
         } catch (Throwable throwable) {
             throwable.printStackTrace();
+        }
+    }
+//Service Pariation
+    public void addServicePartition(String serviceGroup, String name, String lowBalance, String maxBalance, String bonusMax, String description){
+        try{
+            click_on_partitions();
+            fill_details_and_click_on_Addpartition(serviceGroup, name, lowBalance, maxBalance, bonusMax, description);
+        }catch(Exception e) {
+            System.out.println(e.toString());
+        }
+    }
+
+    public void modifyServicePartition(String serviceGroupId, String lowBalance, String maxBalance, String bonusMax, String description){
+        try{
+            click_on_partitions();
+            click_on_modify_link_for_partition(serviceGroupId);
+            modify_details_and_click_on_modify(description, lowBalance,bonusMax);
+        }catch(Exception e) {
+            System.out.println(e.toString());
+        }
+    }
+    public void deleteServicePartition(String serviceGroupId){
+        try{
+            click_on_partitions();
+            click_on_delete_checkbox_against_partition_id(serviceGroupId);
+        }catch(Exception e) {
+            System.out.println(e.toString());
         }
     }
 

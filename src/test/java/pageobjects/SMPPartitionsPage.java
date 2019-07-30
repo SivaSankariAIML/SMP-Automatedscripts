@@ -36,4 +36,22 @@ public class SMPPartitionsPage {
     @FindBy(how=How.XPATH,using="/html/body/form[1]/table/tbody/tr/td/table/tbody/tr[4]/td/div/input")
     public static WebElement Delete_partition;
 
+    @FindBy(how=How.XPATH,using="//*[@id=\"iiAlert_h\"]")
+    public static WebElement alert;
+
+    @FindBy(how=How.XPATH,using="//*[@id=\"iiAlert_h\"]//span[1]")
+    public static WebElement alertMsg;
+
+    @FindBy(how=How.XPATH,using="//*[@id=\"alert_button\"]")
+    public static WebElement alertOkBtn;
+
+    @FindBy(how=How.XPATH,using="//*[@id=\"Cancel_button\"]")
+    public static WebElement confirm_cancelButton;
+
+
+    @FindBy(how = How.XPATH,using = "//*[@name=\"Map\"]")
+    public static WebElement HomeArea;
+
+    @FindBy(how = How.XPATH,using = "//*[@name=\"Map\"]/area[1]")
+    public static WebElement Home;
 }

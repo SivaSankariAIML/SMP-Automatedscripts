@@ -56,4 +56,50 @@ public class SMPDataStructure {
             return null;
         }
     }
+
+    // Constants
+    public HashMap<String,String> notificationType = new HashMap<String, String>() {
+        {
+            put("1","Welcome Activation");
+            put("2","Subscription State");
+            put("3","Replen With Charge");
+            put("4","Replen Charge Fail");
+            put("5","Subscribe With Chg");
+            put("6","Credit Expiry Warn");
+            put("7","Account Expiry Warn");
+            put("8","Recharge");
+            put("9","Expended Partition");
+            put("10","Generic");
+            put("11","Low Bal Partition");
+            put("12","Balance Enquiry");
+            put("13","Notification Mgmt");
+            put("15","Subscription No Fee");
+            put("16"," Periodic Charge Warn");
+            put("17","Subscribe Chg Fail");
+            put("18","Replenish No Fee");
+            put("19","Periodic Luaq Warn");
+            put("20","Luaq Subscription");
+            put("21","Luaq Repaid");
+            put("22","Luaq Repaid Penalty");
+            put("23","Final Replen Fail");
+            put("24","Not Qualified Warn");
+            put("25","Qualified Warn");
+            put("26","SPID Change");
+            put("27","Joined Account Low Balance");
+            put("28","Joined Account Expended");
+            put("29","Joined Account Replenishment");
+            put("1000","SMS Unrecognized");
+            put("1002","Bal Enq Sys Unavail");
+            put("1003","Not Mgmt Sys Unavail");
+        }
+    };
+    public HashMap<String,String> serviceType = new HashMap<String, String>() {
+        {
+            put("-1","Unspecified");
+            put("0","Purchase");
+            put("1","Bonus");
+            put("2","Extended Friends");
+            put("3","Joined Account");
+        }
+    };
 }
